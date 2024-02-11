@@ -1,5 +1,5 @@
-api.map('<q>', '<j>');
+api.unmapAllExcept([]);
 
-api.mapkey('<Ctrl-y>', 'Show me the money', function() {
+api.mapkey('<Space>e', function() {
     api.Front.openOmnibar({type: 'Bookmarks'});
 });
