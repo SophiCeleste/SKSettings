@@ -1,5 +1,3 @@
-api.unmapAllExcept([]);
-
-api.mapkey('<Space>e', function() {
+api.mapkey('<Space>n', function() {
     api.Front.openOmnibar({type: 'Bookmarks'});
 });
