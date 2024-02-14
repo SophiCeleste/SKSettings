@@ -1,3 +1,0 @@
-api.mapkey('sf', function() {
-    api.Front.openOmnibar({type: 'Bookmarks'});
-});
