@@ -4,37 +4,37 @@ maps.normal = [
     // Help
     {
         oks: '<Alt-s>',
-        nks: '',    
+        nks: '<Alt-;>',    
         hint: 'Toggle SurfingKeys on current site',
         domain: ''
     },
     {
         oks: '<Alt-i>',
-        nks: '',
+        nks: 'p',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
         oks: 'p',
-        nks: '',
+        nks: 'ep',
         hint: 'Enter ephemeral pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
         oks: '?',
-        nks: '',
+        nks: '?',
         hint: 'Show help',
         domain: ''
     },
     {
         oks: ';ql',
-        nks: '',
+        nks: '<Space>.',
         hint: 'Show last action',
         domain: ''
     },
     {
         oks: '.',
-        nks: '',
+        nks: '.',
         hint: 'Repeat last action',
         domain: ''
     },
@@ -42,79 +42,79 @@ maps.normal = [
     // Mouse Click
     {
         oks: 'cf',
-        nks: '',
+        nks: ';f',
         hint: 'Open multiple links in a new tab',
         domain: ''
     },
     {
         oks: 'gi',
-        nks: '',
+        nks: 'gi',
         hint: 'Go to the first input field',
         domain: ''
     },
     {
         oks: 'gf',
-        nks: '',
+        nks: 'F',
         hint: 'Open a link in a non-active new tab',
         domain: ''
     },
     {
         oks: '[[',
-        nks: '',
+        nks: '[[',
         hint: 'Clicks the previous link on the current page',
         domain: ''
     },
     {
         oks: ']]',
-        nks: '',
+        nks: ']]',
         hint: 'Clicks the next link on the current page',
         domain: ''
     },
     {
         oks: ';m',
-        nks: '',
+        nks: ';m',
         hint: 'Mouse out final element',
         domain: ''
     },
     {
         oks: ';fs',
-        nks: '',
+        nks: 'sh',
         hint: 'Display hints to focus scrollable elements',
         domain: ''
     },
     {
         oks: ';di',
-        nks: '',
+        nks: ';di',
         hint: 'Download image',
         domain: ''
     },
     {
         oks: 'i',
-        nks: '',
+        nks: 'i',
         hint: 'Select input field',
         domain: ''
     },
     {
         oks: 'I',
-        nks: '',
+        nks: 'I',
         hint: 'Open input field with vim editor',
         domain: ''
     },
     {
         oks: 'O',
-        nks: '',
+        nks: 'O',
         hint: 'Open detected links from selected text',
         domain: ''
     },
     {
         oks: 'f',
-        nks: '',
+        nks: 'f',
         hint: 'Open a link in the current tab',
         domain: ''
     },
     {
         oks: 'af',
-        nks: '',
+        nks: '<Space>f',
         hint: 'Open a link in an active new tab',
         domain: ''
     },
@@ -126,13 +126,13 @@ maps.normal = [
     },
     {
         oks: '<CTRL-h>',
-        nks: '',
+        nks: 'mov',
         hint: 'Mouse over element',
         domain: ''
     },
     {
         oks: '<CTRL-j>',
-        nks: '',
+        nks: 'mou',
         hint: 'Mouse out element',
         domain: ''
     },
@@ -144,7 +144,7 @@ maps.normal = [
     },
     {
         oks: 'q',
-        nks: '',
+        nks: 'ci',
         hint: 'Click on an image or button',
         domain: ''
     },
@@ -154,140 +154,128 @@ maps.normal = [
         hint: 'Open input field with vim editor',
         domain: ''
     },
-    {
-        oks: 'F',
-        nks: '',
-        hint: 'Open a link in a non-active new tab',
-        domain: ''
-    },
 
     // Scroll Page / Element
     {
         oks: '0',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>h',
+        hint: 'Scroll left end',
         domain: ''
     },
     {
         oks: 'cS',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'sr',
+        hint: 'Reset scroll target',
         domain: ''
     },
     {
         oks: 'cs',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 's;',
+        hint: 'Change scroll target',
         domain: ''
     },
     {
         oks: 'e',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'K',
+        hint: 'Scroll half page up',
         domain: ''
     },
     {
         oks: 'U',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>k',
+        hint: 'Scroll full page up',
         domain: ''
     },
     {
         oks: 'd',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'J',
+        hint: 'Scroll half page down',
         domain: ''
     },
     {
         oks: 'P',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>j',
+        hint: 'Scroll full page down',
         domain: ''
     },
     {
         oks: 'gg',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'gg',
+        hint: 'Scroll to top',
         domain: ''
     },
     {
         oks: 'G',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'G',
+        hint: 'Scroll to bottom',
         domain: ''
     },
     {
         oks: 'j',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'j',
+        hint: 'Scroll down',
         domain: ''
     },
     {
         oks: 'k',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'k',
+        hint: 'Scroll up',
         domain: ''
     },
     {
         oks: 'h',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'h',
+        hint: 'Scroll left',
         domain: ''
     },
     {
         oks: 'l',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'l',
+        hint: 'Scroll right',
         domain: ''
     },
     {
         oks: '$',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>l',
+        hint: 'Scroll right end',
         domain: ''
     },
     {
         oks: '%',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '%',
+        hint: 'Scroll percentage',
         domain: ''
     },
     {
         oks: ';w',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>m',
+        hint: 'Switch frames',
         domain: ''
     },
     {
         oks: 'w',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        oks: 'u',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>M',
+        hint: 'Focus top frame',
         domain: ''
     },
 
     // Tabs
     {
         oks: 'yT',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'tT',
+        hint: 'Duplicate tab, non active',
         domain: ''
     },
     {
         oks: 'yv',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'tt',
+        hint: 'Duplicate tab',
         domain: ''
     },
     {
         oks: 'g0',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Go to first tab',
         domain: ''
     },
     {
