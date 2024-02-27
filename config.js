@@ -1,1501 +1,1479 @@
 const maps = {}
 
-maps.default = [
+maps.normal = [
     // Help
     {
-        name: 'toggle extension',
-        keystroke: '<Alt-s>',
+        oks: '<Alt-s>',
+        nks: '',    
         hint: 'Toggle SurfingKeys on current site',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '<Alt-i>',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'ephemeral pass through mode',
-        keystroke: 'p',
+        oks: 'p',
+        nks: '',
         hint: 'Enter ephemeral pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'help',
-        keystroke: '?',
+        oks: '?',
+        nks: '',
         hint: 'Show help',
         domain: ''
     },
     {
-        name: 'show last action',
-        keystroke: ';ql',
+        oks: ';ql',
+        nks: '',
         hint: 'Show last action',
         domain: ''
     },
     {
-        name: 'repeat last action',
-        keystroke: '.',
+        oks: '.',
+        nks: '',
         hint: 'Repeat last action',
         domain: ''
     },
 
     // Mouse Click
     {
-        name: 'open multiple links',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'cf',
+        nks: '',
+        hint: 'Open multiple links in a new tab',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'gi',
+        nks: '',
+        hint: 'Go to the first input field',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'gf',
+        nks: '',
+        hint: 'Open a link in a non-active new tab',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: '[[',
+        nks: '',
+        hint: 'Clicks the previous link on the current page',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: ']]',
+        nks: '',
+        hint: 'Clicks the next link on the current page',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: ';m',
+        nks: '',
+        hint: 'Mouse out final element',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: ';fs',
+        nks: '',
+        hint: 'Display hints to focus scrollable elements',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: ';di',
+        nks: '',
+        hint: 'Download image',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'i',
+        nks: '',
+        hint: 'Select input field',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'I',
+        nks: '',
+        hint: 'Open input field with vim editor',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'O',
+        nks: '',
+        hint: 'Open detected links from selected text',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'f',
+        nks: '',
+        hint: 'Open a link in the current tab',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'af',
+        nks: '',
+        hint: 'Open a link in an active new tab',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'C',
+        nks: '',
+        hint: 'Open a link in a non-active new tab',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: '<CTRL-h>',
+        nks: '',
+        hint: 'Mouse over element',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: '<CTRL-j>',
+        nks: '',
+        hint: 'Mouse out element',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: '<CTRL-i>',
+        nks: '',
+        hint: 'Open input field with vim editor',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: 'q',
+        nks: '',
+        hint: 'Click on an image or button',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        oks: '<Ctrl-Alt-i>',
+        nks: '',
+        hint: 'Open input field with vim editor',
+        domain: ''
+    },
+    {
+        oks: 'F',
+        nks: '',
+        hint: 'Open a link in a non-active new tab',
         domain: ''
     },
 
     // Scroll Page / Element
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '0',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'cS',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'cs',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'e',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'U',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'd',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'P',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gg',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'G',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'j',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'k',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'h',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'l',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '$',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '%',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';w',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'w',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'u',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Tabs
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yT',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yv',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'g0',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'g$',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gx0',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gxt',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gxT',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gx$',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gxx',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gxp',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'E',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'R',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'T',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';gt',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';gw',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'zr',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'zi',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'zo',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '<Alt-p>',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '<Alt-m>',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'on',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'x',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'X',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'W',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '<<',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '>>',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Page Navigation
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gu',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gT',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gt',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gp',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'g?',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'g#',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gU',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';u',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';U',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'B',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '<Ctrl-6>',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'S',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'D',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'r',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Sessions
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ZZ',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ZR',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Search Selected With
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'sg',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'sd',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'sb',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'se',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'sw',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ss',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'sh',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'sy',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
-    
+
     // Clipboard
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yG',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yS',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ymv',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yma',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ymc',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yg',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ya',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yc',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yq',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yi',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ys',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yj',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yy',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yY',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yh',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yl',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yQ',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yf',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yp',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yd',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'yv',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'cq',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'cc',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pp',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pj',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pf',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-
-    // Omnibar
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-
-    // Visual Mode
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';cq',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Vim-like Marks
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'm',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '\'',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: '<Ctrl-\'',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Settings
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pm',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';e',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';v',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
-    
+
     // Chrome URLs
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ga',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gb',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gc',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gd',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gh',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gk',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'ge',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gn',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gs',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';i',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';j',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Proxy
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'cp',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pa',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pb',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pd',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';ps',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';pc',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';cp',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';ap',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
 
     // Misc
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: 'gr',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';s',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';ph',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';t',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';dh',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';db',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
+        oks: ';yh',
+        nks: '',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-
-    // Insert Mode
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    {
-        name: 'pass through mode',
-        keystroke: '<Alt-i>',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
-        domain: ''
-    },
-    
-]
-
-maps.custom = [
-    // Help
-    {
-        name: 'toggle extension',
-        keystroke: '<Space>c',
-        hint: 'Toggle SurfingKeys on current site',
         domain: ''
     }
 ]
 
-for (let i = 0; i < maps.default.length; i++) {
-    let newKeystroke = maps.custom[i].keystroke;
-    let oldKeystroke = maps.default[i].keystroke;
-    let domain = maps.custom[i].domain;
-    let newHint = maps.custom[i].hint;
+maps.omnibar = [
+    // Omnibar
+    {
+        oks: 'go',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'Q',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'ab',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'oi',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'om',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'og',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'od',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'ob',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'oe',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'ow',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'os',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'oy',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'ox',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'oh',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: ':',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 't',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'b',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-d>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-i>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-j>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-.>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-,>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-c>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-D>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-r>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Esc>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-m>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Tab>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Shift-Tab>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-\'>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<ArrowDown>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<ArrowUp>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-n>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-p>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    }
+]
 
-    console.log(newKeystroke);
-    console.log(oldKeystroke);
-    console.log(domain);
-    console.log(newHint);
-    api.map(newKeystroke, oldKeystroke, domain, newHint);
+maps.visual = [
+    // Visual Mode
+    {
+        oks: '/',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'zv',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'V',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '*',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'v',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'n',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'N',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '0',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'l',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'h',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'j',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'k',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'w',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'e',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'b',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: ')',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '(',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '}',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '{',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '$',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'G',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'gg',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'gr',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'o',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '*',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Enter>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Shift-Enter>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'zt',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'zz',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'zb',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'f',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'F',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: ';',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: ',',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'p',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'V',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-u>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-d>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 't',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: 'q',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    }
+]
+
+maps.insert = [
+    // Insert Mode
+    {
+        oks: '<Ctrl-e>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-f>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-u>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Alt-b>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Alt-f>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Alt-w>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Alt-d>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Esc>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-\'>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-i>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-Alt-i>',
+        nks: '',
+        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        domain: ''
+    }
+]
+
+for (let i = 0; i < maps.normal.length; i++) {
+    let oks = maps.normal[i].oks;
+    let nks = maps.normal[i].nks;
+    let hint = maps.normal[i].hint;
+    let domain = maps.normal[i].domain;
+    api.map(nks, oks, domain, hint);
 };
 
 api.map('<Alt-c>', '<Alt-s>');
@@ -1503,3 +1481,13 @@ api.map('<Alt-c>', '<Alt-s>');
 api.mapkey('<Space>df', 'test', function() {
     console.log(maps.default[0].keystroke);
 });
+=======
+// Netsuite
+
+u = /netsuite\.com/;
+k = leader + k;
+
+mapKeysOld(k, h, c, u);
+
+api.map('<Space>o', k);
+api.unmap(k);
