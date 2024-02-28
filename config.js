@@ -262,7 +262,7 @@ maps.normal = [
     // Tabs
     {
         oks: 'yT',
-        nks: 'tT',
+        nks: 'TT',
         hint: 'Duplicate tab, non active',
         domain: ''
     },
@@ -274,146 +274,146 @@ maps.normal = [
     },
     {
         oks: 'g0',
-        nks: '',
+        nks: 'th',
         hint: 'Go to first tab',
         domain: ''
     },
     {
         oks: 'g$',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'tl',
+        hint: 'Go to last tab',
         domain: ''
     },
     {
         oks: 'gx0',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'CH',
+        hint: 'Close all tabs on the left',
         domain: ''
     },
     {
         oks: 'gxt',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'ch',
+        hint: 'Close tab left',
         domain: ''
     },
     {
         oks: 'gxT',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'cl',
+        hint: 'Close tab right',
         domain: ''
     },
     {
         oks: 'gx$',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'CL',
+        hint: 'Close all tabs on the right',
         domain: ''
     },
     {
         oks: 'gxx',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'CC',
+        hint: 'Close all other tabs',
         domain: ''
     },
     {
         oks: 'gxp',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'cs',
+        hint: 'Close playing tab',
         domain: ''
     },
     {
         oks: 'E',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'H',
+        hint: 'Go tab left',
         domain: ''
     },
     {
         oks: 'R',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'L',
+        hint: 'Go tab right',
         domain: ''
     },
     {
         oks: 'T',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 't;',
+        hint: 'Choose a tab',
         domain: ''
     },
     {
         oks: ';gt',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Gather filtered tabs into current window',
         domain: ''
     },
     {
         oks: ';gw',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Gather all tabs into current window',
         domain: ''
     },
     {
         oks: 'zr',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'zr',
+        hint: 'Zoom reset',
         domain: ''
     },
     {
         oks: 'zi',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'zi',
+        hint: 'Zoom in',
         domain: ''
     },
     {
         oks: 'zo',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'zo',
+        hint: 'Zoom out',
         domain: ''
     },
     {
         oks: '<Alt-p>',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'tp',
+        hint: 'Pin / unpin current tab',
         domain: ''
     },
     {
         oks: '<Alt-m>',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'ms',
+        hint: 'Mute / unmute current tab',
         domain: ''
     },
     {
         oks: 'on',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>g',
+        hint: 'Open new tab',
         domain: ''
     },
     {
         oks: 'x',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'x',
+        hint: 'Close current tab',
         domain: ''
     },
     {
         oks: 'X',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'X',
+        hint: 'Reopen closed tab',
         domain: ''
     },
     {
         oks: 'W',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'tm',
+        hint: 'Move tab to another window',
         domain: ''
     },
     {
         oks: '<<',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Shift-Space>H',
+        hint: 'Move tab left',
         domain: ''
     },
     {
         oks: '>>',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Shift-Space>L',
+        hint: 'Move tab right',
         domain: ''
     },
 
@@ -421,99 +421,105 @@ maps.normal = [
     {
         oks: 'gu',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Go up one path in the URL',
         domain: ''
     },
     {
         oks: 'gT',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Go to first activated tab',
         domain: ''
     },
     {
         oks: 'gt',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Go to last activated tab',
         domain: ''
     },
     {
         oks: 'gp',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'gs',
+        hint: 'Go to playing tab',
         domain: ''
     },
     {
         oks: 'g?',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'R?',
+        hint: 'Reload current tab without query string',
         domain: ''
     },
     {
         oks: 'g#',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'R#',
+        hint: 'Reload current tab without hash fragment',
         domain: ''
     },
     {
         oks: 'gU',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: '<Space>r',
+        hint: 'Go to root URL',
         domain: ''
     },
     {
         oks: ';u',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Edit URL and open in new tab',
         domain: ''
     },
     {
         oks: ';U',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Edit URL and reload',
         domain: ''
     },
     {
         oks: 'B',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Tab history back',
+        domain: ''
+    },
+    {
+        oks: 'F',
+        nks: '',
+        hint: 'Tab history forward',
         domain: ''
     },
     {
         oks: '<Ctrl-6>',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Go to last used tab',
         domain: ''
     },
     {
         oks: 'S',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'S',
+        hint: 'History back',
         domain: ''
     },
     {
         oks: 'D',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'D',
+        hint: 'History forward',
         domain: ''
     },
     {
         oks: 'r',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'r',
+        hint: 'Reload current tab',
         domain: ''
     },
 
     // Sessions
     {
         oks: 'ZZ',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'ZZ',
+        hint: 'Save session and quit',
         domain: ''
     },
     {
         oks: 'ZR',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'ZR',
+        hint: 'Restore last session',
         domain: ''
     },
 
@@ -521,49 +527,49 @@ maps.normal = [
     {
         oks: 'sg',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Search Google',
         domain: ''
     },
     {
         oks: 'sd',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Search Duckduckgo',
         domain: ''
     },
     {
         oks: 'sb',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Search Baidu',
         domain: ''
     },
     {
         oks: 'se',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'sk',
+        hint: 'Search Wikipedia',
         domain: ''
     },
     {
         oks: 'sw',
         nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        hint: 'Search Bing',
         domain: ''
     },
     {
         oks: 'ss',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'ss',
+        hint: 'Search Stackoverflow',
         domain: ''
     },
     {
         oks: 'sh',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'si',
+        hint: 'Search Github',
         domain: ''
     },
     {
         oks: 'sy',
-        nks: '',
-        hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
+        nks: 'sy',
+        hint: 'Search Youtube',
         domain: ''
     },
 
