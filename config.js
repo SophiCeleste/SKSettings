@@ -1,7 +1,367 @@
 const maps = {}
 
 maps.normal = [
+    ////////////////
+    // Unused
+    ////////////////
+    {
+        oks: 'C',
+        nks: '',
+        hint: 'Open a link in a non-active new tab',
+        domain: ''
+    },
+    {
+        oks: '<CTRL-i>',
+        nks: '',
+        hint: 'Open input field with vim editor',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-Alt-i>',
+        nks: '',
+        hint: 'Open input field with vim editor',
+        domain: ''
+    },
+    {
+        oks: ';gt',
+        nks: '',
+        hint: 'Gather filtered tabs into current window',
+        domain: ''
+    },
+    {
+        oks: ';gw',
+        nks: '',
+        hint: 'Gather all tabs into current window',
+        domain: ''
+    },
+    {
+        oks: 'gu',
+        nks: '',
+        hint: 'Go up one path in the URL',
+        domain: ''
+    },
+    {
+        oks: 'gT',
+        nks: '',
+        hint: 'Go to first activated tab',
+        domain: ''
+    },
+    {
+        oks: 'gt',
+        nks: '',
+        hint: 'Go to last activated tab',
+        domain: ''
+    },
+    {
+        oks: ';u',
+        nks: '',
+        hint: 'Edit URL and open in new tab',
+        domain: ''
+    },
+    {
+        oks: ';U',
+        nks: '',
+        hint: 'Edit URL and reload',
+        domain: ''
+    },
+    {
+        oks: 'B',
+        nks: '',
+        hint: 'Tab history back',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-6>',
+        nks: '',
+        hint: 'Go to last used tab',
+        domain: ''
+    },
+    {
+        oks: 'sg',
+        nks: '',
+        hint: 'Search Google',
+        domain: ''
+    },
+    {
+        oks: 'sd',
+        nks: '',
+        hint: 'Search Duckduckgo',
+        domain: ''
+    },
+    {
+        oks: 'sb',
+        nks: '',
+        hint: 'Search Baidu',
+        domain: ''
+    },
+    {
+        oks: 'sw',
+        nks: '',
+        hint: 'Search Bing',
+        domain: ''
+    },
+    {
+        oks: 'yG',
+        nks: '',
+        hint: 'Yank full page',
+        domain: ''
+    },
+    {
+        oks: 'yS',
+        nks: '',
+        hint: 'Yank scrollable element',
+        domain: ''
+    },
+    {
+        oks: 'ymv',
+        nks: '',
+        hint: 'Yank text multiple elements',
+        domain: ''
+    },
+    {
+        oks: 'yma',
+        nks: '',
+        hint: 'Yank multiple URLs',
+        domain: ''
+    },
+    {
+        oks: 'ymc',
+        nks: '',
+        hint: 'Yank multiple columns',
+        domain: ''
+    },
+    {
+        oks: 'yg',
+        nks: '',
+        hint: 'Yank current page',
+        domain: ''
+    },
+    {
+        oks: 'ya',
+        nks: '',
+        hint: 'Yank link URL',
+        domain: ''
+    },
+    {
+        oks: 'yc',
+        nks: '',
+        hint: 'Yank column',
+        domain: ''
+    },
+    {
+        oks: 'yq',
+        nks: '',
+        hint: 'Yank pre text',
+        domain: ''
+    },
+    {
+        oks: 'ys',
+        nks: '',
+        hint: 'Yank source',
+        domain: ''
+    },
+    {
+        oks: 'yj',
+        nks: '',
+        hint: 'Yank settings',
+        domain: ''
+    },
+    {
+        oks: 'yY',
+        nks: '',
+        hint: 'Yank URL of all tabs',
+        domain: ''
+    },
+    {
+        oks: 'yh',
+        nks: '',
+        hint: 'Yank host',
+        domain: ''
+    },
+    {
+        oks: 'yl',
+        nks: '',
+        hint: 'Yank title',
+        domain: ''
+    },
+    {
+        oks: 'yQ',
+        nks: '',
+        hint: 'Yank query history of OmniQuery',
+        domain: ''
+    },
+    {
+        oks: 'yp',
+        nks: '',
+        hint: 'Yank form POST',
+        domain: ''
+    },
+    {
+        oks: 'yd',
+        nks: '',
+        hint: 'Yank downloading URL',
+        domain: ''
+    },
+    {
+        oks: 'cq',
+        nks: '',
+        hint: 'Query word with hints',
+        domain: ''
+    },
+    {
+        oks: 'cc',
+        nks: '',
+        hint: 'Open link clipboard / selected',
+        domain: ''
+    },
+    {
+        oks: ';pp',
+        nks: '',
+        hint: 'Paste HTML to current page',
+        domain: ''
+    },
+    {
+        oks: ';pj',
+        nks: '',
+        hint: 'Restore settings from keyboard',
+        domain: ''
+    },
+    {
+        oks: ';pf',
+        nks: '',
+        hint: 'Fill form from clipboard',
+        domain: ''
+    },
+    {
+        oks: ';cq',
+        nks: '',
+        hint: 'Clear all URLs in queue',
+        domain: ''
+    },
+    {
+        oks: 'ga',
+        nks: '',
+        hint: 'Open Chrome about',
+        domain: ''
+    },
+    {
+        oks: 'gb',
+        nks: '',
+        hint: 'Open Chrome bookmarks',
+        domain: ''
+    },
+    {
+        oks: 'gc',
+        nks: '',
+        hint: 'Open Chrome cache',
+        domain: ''
+    },
+    {
+        oks: 'gd',
+        nks: '',
+        hint: 'Open Chrome downloads',
+        domain: ''
+    },
+    {
+        oks: 'gh',
+        nks: '',
+        hint: 'Open Chrome history',
+        domain: ''
+    },
+    {
+        oks: 'gk',
+        nks: '',
+        hint: 'Open Chrome cookies',
+        domain: ''
+    },
+    {
+        oks: 'ge',
+        nks: '',
+        hint: 'Open Chrome extensions',
+        domain: ''
+    },
+    {
+        oks: 'gn',
+        nks: '',
+        hint: 'Open Chrome net-internals',
+        domain: ''
+    },
+    {
+        oks: ';pm',
+        nks: '',
+        hint: 'Preview markdown',
+        domain: ''
+    },
+    {
+        oks: 'cp',
+        nks: '',
+        hint: 'Toggle proxy',
+        domain: ''
+    },
+    {
+        oks: ';pa',
+        nks: '',
+        hint: 'Proxy always',
+        domain: ''
+    },
+    {
+        oks: ';pb',
+        nks: '',
+        hint: 'Proxy byhost',
+        domain: ''
+    },
+    {
+        oks: ';pd',
+        nks: '',
+        hint: 'Proxy direct',
+        domain: ''
+    },
+    {
+        oks: ';ps',
+        nks: '',
+        hint: 'Proxy system',
+        domain: ''
+    },
+    {
+        oks: ';pc',
+        nks: '',
+        hint: 'Proxy clear',
+        domain: ''
+    },
+    {
+        oks: ';cp',
+        nks: '',
+        hint: 'Copy proxy info',
+        domain: ''
+    },
+    {
+        oks: ';ap',
+        nks: '',
+        hint: 'Apply proxy info from clipboard',
+        domain: ''
+    },
+    {
+        oks: 'gr',
+        nks: '',
+        hint: 'Read text from clipboard / selected',
+        domain: ''
+    },
+    {
+        oks: ';ph',
+        nks: '',
+        hint: 'Paste history form clipboard',
+        domain: ''
+    },
+    {
+        oks: ';yh',
+        nks: '',
+        hint: 'Yank history',
+        domain: ''
+    },
+    
+    ////////////////
     // Help
+    ////////////////
     {
         oks: '<Alt-s>',
         nks: '<Alt-;>',    
@@ -39,7 +399,9 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Mouse Click
+    ////////////////
     {
         oks: 'cf',
         nks: ';f',
@@ -119,12 +481,6 @@ maps.normal = [
         domain: ''
     },
     {
-        oks: 'C',
-        nks: '',
-        hint: 'Open a link in a non-active new tab',
-        domain: ''
-    },
-    {
         oks: '<CTRL-h>',
         nks: 'mov',
         hint: 'Mouse over element',
@@ -137,25 +493,15 @@ maps.normal = [
         domain: ''
     },
     {
-        oks: '<CTRL-i>',
-        nks: '',
-        hint: 'Open input field with vim editor',
-        domain: ''
-    },
-    {
         oks: 'q',
         nks: 'ci',
         hint: 'Click on an image or button',
         domain: ''
     },
-    {
-        oks: '<Ctrl-Alt-i>',
-        nks: '',
-        hint: 'Open input field with vim editor',
-        domain: ''
-    },
 
+    ////////////////
     // Scroll Page / Element
+    ////////////////
     {
         oks: '0',
         nks: '<Space>h',
@@ -259,7 +605,9 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Tabs
+    ////////////////
     {
         oks: 'yT',
         nks: 'TT',
@@ -339,18 +687,6 @@ maps.normal = [
         domain: ''
     },
     {
-        oks: ';gt',
-        nks: '',
-        hint: 'Gather filtered tabs into current window',
-        domain: ''
-    },
-    {
-        oks: ';gw',
-        nks: '',
-        hint: 'Gather all tabs into current window',
-        domain: ''
-    },
-    {
         oks: 'zr',
         nks: 'zr',
         hint: 'Zoom reset',
@@ -417,25 +753,9 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Page Navigation
-    {
-        oks: 'gu',
-        nks: '',
-        hint: 'Go up one path in the URL',
-        domain: ''
-    },
-    {
-        oks: 'gT',
-        nks: '',
-        hint: 'Go to first activated tab',
-        domain: ''
-    },
-    {
-        oks: 'gt',
-        nks: '',
-        hint: 'Go to last activated tab',
-        domain: ''
-    },
+    ////////////////
     {
         oks: 'gp',
         nks: 'gs',
@@ -461,33 +781,9 @@ maps.normal = [
         domain: ''
     },
     {
-        oks: ';u',
-        nks: '',
-        hint: 'Edit URL and open in new tab',
-        domain: ''
-    },
-    {
-        oks: ';U',
-        nks: '',
-        hint: 'Edit URL and reload',
-        domain: ''
-    },
-    {
-        oks: 'B',
-        nks: '',
-        hint: 'Tab history back',
-        domain: ''
-    },
-    {
         oks: 'F',
-        nks: '',
+        nks: 'zr',
         hint: 'Tab history forward',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-6>',
-        nks: '',
-        hint: 'Go to last used tab',
         domain: ''
     },
     {
@@ -509,7 +805,9 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Sessions
+    ////////////////
     {
         oks: 'ZZ',
         nks: 'ZZ',
@@ -523,35 +821,13 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Search Selected With
-    {
-        oks: 'sg',
-        nks: '',
-        hint: 'Search Google',
-        domain: ''
-    },
-    {
-        oks: 'sd',
-        nks: '',
-        hint: 'Search Duckduckgo',
-        domain: ''
-    },
-    {
-        oks: 'sb',
-        nks: '',
-        hint: 'Search Baidu',
-        domain: ''
-    },
+    ////////////////
     {
         oks: 'se',
         nks: 'sk',
         hint: 'Search Wikipedia',
-        domain: ''
-    },
-    {
-        oks: 'sw',
-        nks: '',
-        hint: 'Search Bing',
         domain: ''
     },
     {
@@ -573,77 +849,13 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Clipboard
-    {
-        oks: 'yG',
-        nks: '',
-        hint: 'Yank full page',
-        domain: ''
-    },
-    {
-        oks: 'yS',
-        nks: '',
-        hint: 'Yank scrollable element',
-        domain: ''
-    },
-    {
-        oks: 'ymv',
-        nks: '',
-        hint: 'Yank text multiple elements',
-        domain: ''
-    },
-    {
-        oks: 'yma',
-        nks: '',
-        hint: 'Yank multiple URLs',
-        domain: ''
-    },
-    {
-        oks: 'ymc',
-        nks: '',
-        hint: 'Yank multiple columns',
-        domain: ''
-    },
-    {
-        oks: 'yg',
-        nks: '',
-        hint: 'Yank current page',
-        domain: ''
-    },
-    {
-        oks: 'ya',
-        nks: '',
-        hint: 'Yank link URL',
-        domain: ''
-    },
-    {
-        oks: 'yc',
-        nks: '',
-        hint: 'Yank column',
-        domain: ''
-    },
-    {
-        oks: 'yq',
-        nks: '',
-        hint: 'Yank pre text',
-        domain: ''
-    },
+    ////////////////
     {
         oks: 'yi',
         nks: 'yi',
         hint: 'Yank input',
-        domain: ''
-    },
-    {
-        oks: 'ys',
-        nks: '',
-        hint: 'Yank source',
-        domain: ''
-    },
-    {
-        oks: 'yj',
-        nks: '',
-        hint: 'Yank settings',
         domain: ''
     },
     {
@@ -659,85 +871,15 @@ maps.normal = [
         domain: ''
     },
     {
-        oks: 'yY',
-        nks: '',
-        hint: 'Yank URL of all tabs',
-        domain: ''
-    },
-    {
-        oks: 'yh',
-        nks: '',
-        hint: 'Yank host',
-        domain: ''
-    },
-    {
-        oks: 'yl',
-        nks: '',
-        hint: 'Yank title',
-        domain: ''
-    },
-    {
-        oks: 'yQ',
-        nks: '',
-        hint: 'Yank query history of OmniQuery',
-        domain: ''
-    },
-    {
         oks: 'yf',
         nks: 'yf',
         hint: 'Yank form JSON',
         domain: ''
     },
-    {
-        oks: 'yp',
-        nks: '',
-        hint: 'Yank form POST',
-        domain: ''
-    },
-    {
-        oks: 'yd',
-        nks: '',
-        hint: 'Yank downloading URL',
-        domain: ''
-    },
-    {
-        oks: 'cq',
-        nks: '',
-        hint: 'Query word with hints',
-        domain: ''
-    },
-    {
-        oks: 'cc',
-        nks: '',
-        hint: 'Open link clipboard / selected',
-        domain: ''
-    },
-    {
-        oks: ';pp',
-        nks: '',
-        hint: 'Paste HTML to current page',
-        domain: ''
-    },
-    {
-        oks: ';pj',
-        nks: '',
-        hint: 'Restore settings from keyboard',
-        domain: ''
-    },
-    {
-        oks: ';pf',
-        nks: '',
-        hint: 'Fill form from clipboard',
-        domain: ''
-    },
-    {
-        oks: ';cq',
-        nks: '',
-        hint: 'Clear all URLs in queue',
-        domain: ''
-    },
 
+    ////////////////
     // Vim-like Marks
+    ////////////////
     {
         oks: 'm',
         nks: 'm',
@@ -757,13 +899,9 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Settings
-    {
-        oks: ';pm',
-        nks: '',
-        hint: 'Preview markdown',
-        domain: ''
-    },
+    ////////////////
     {
         oks: ';e',
         nks: ';e',
@@ -777,55 +915,9 @@ maps.normal = [
         domain: ''
     },
 
+    ////////////////
     // Chrome URLs
-    {
-        oks: 'ga',
-        nks: '',
-        hint: 'Open Chrome about',
-        domain: ''
-    },
-    {
-        oks: 'gb',
-        nks: '',
-        hint: 'Open Chrome bookmarks',
-        domain: ''
-    },
-    {
-        oks: 'gc',
-        nks: '',
-        hint: 'Open Chrome cache',
-        domain: ''
-    },
-    {
-        oks: 'gd',
-        nks: '',
-        hint: 'Open Chrome downloads',
-        domain: ''
-    },
-    {
-        oks: 'gh',
-        nks: '',
-        hint: 'Open Chrome history',
-        domain: ''
-    },
-    {
-        oks: 'gk',
-        nks: '',
-        hint: 'Open Chrome cookies',
-        domain: ''
-    },
-    {
-        oks: 'ge',
-        nks: '',
-        hint: 'Open Chrome extensions',
-        domain: ''
-    },
-    {
-        oks: 'gn',
-        nks: '',
-        hint: 'Open Chrome net-internals',
-        domain: ''
-    },
+    ////////////////
     {
         oks: 'gs',
         nks: 'gs',
@@ -845,73 +937,13 @@ maps.normal = [
         domain: ''
     },
 
-    // Proxy
-    {
-        oks: 'cp',
-        nks: '',
-        hint: 'Toggle proxy',
-        domain: ''
-    },
-    {
-        oks: ';pa',
-        nks: '',
-        hint: 'Proxy always',
-        domain: ''
-    },
-    {
-        oks: ';pb',
-        nks: '',
-        hint: 'Proxy byhost',
-        domain: ''
-    },
-    {
-        oks: ';pd',
-        nks: '',
-        hint: 'Proxy direct',
-        domain: ''
-    },
-    {
-        oks: ';ps',
-        nks: '',
-        hint: 'Proxy system',
-        domain: ''
-    },
-    {
-        oks: ';pc',
-        nks: '',
-        hint: 'Proxy clear',
-        domain: ''
-    },
-    {
-        oks: ';cp',
-        nks: '',
-        hint: 'Copy proxy info',
-        domain: ''
-    },
-    {
-        oks: ';ap',
-        nks: '',
-        hint: 'Apply proxy info from clipboard',
-        domain: ''
-    },
-
+    ////////////////
     // Misc
-    {
-        oks: 'gr',
-        nks: '',
-        hint: 'Read text from clipboard / selected',
-        domain: ''
-    },
+    ////////////////
     {
         oks: ';s',
         nks: ';s',
         hint: 'Toggle PDF viewer',
-        domain: ''
-    },
-    {
-        oks: ';ph',
-        nks: '',
-        hint: 'Paste history form clipboard',
         domain: ''
     },
     {
@@ -931,27 +963,93 @@ maps.normal = [
         nks: ';xb',
         hint: 'Remove current bookmark',
         domain: ''
-    },
-    {
-        oks: ';yh',
-        nks: '',
-        hint: 'Yank history',
-        domain: ''
     }
 ];
-/*
+
 maps.omnibar = [
-    // Omnibar
-    {
-        oks: 'go',
-        nks: 'go',
-        hint: 'Open URL in current tab',
-        domain: ''
-    },
+    ////////////////
+    // Unused
+    ////////////////
     {
         oks: 'Q',
         nks: '',
         hint: 'Open omnibar for translation',
+        domain: ''
+    },
+    {
+        oks: 'om',
+        nks: '',
+        hint: 'Open URL from marks',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-d>',
+        nks: '',
+        hint: 'Delete focused item from bookmark / history',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-.>',
+        nks: '',
+        hint: 'Show results of next page',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-,>',
+        nks: '',
+        hint: 'Show results of previous page',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-c>',
+        nks: '',
+        hint: 'Copy selected item URL',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-D>',
+        nks: '',
+        hint: 'Delete all listed items from bookmark / history',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-r>',
+        nks: '',
+        hint: 'Resort history by visit count or time',
+        domain: ''
+    },
+    {
+        oks: '<ArrowDown>',
+        nks: '',
+        hint: 'Cycle through candidates',
+        domain: ''
+    },
+    {
+        oks: '<ArrowUp>',
+        nks: '',
+        hint: 'Cycle backwards through candidates',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-n>',
+        nks: '',
+        hint: 'Cycle through candidates',
+        domain: ''
+    },
+    {
+        oks: '<Ctrl-p>',
+        nks: '',
+        hint: 'Cycle backwards through candidates',
+        domain: ''
+    },
+
+    ////////////////
+    // Omnibar
+    ////////////////
+    {
+        oks: 'go',
+        nks: 'go',
+        hint: 'Open URL in current tab',
         domain: ''
     },
     {
@@ -964,12 +1062,6 @@ maps.omnibar = [
         oks: 'oi',
         nks: 'oi',
         hint: 'Incognito',
-        domain: ''
-    },
-    {
-        oks: 'om',
-        nks: '',
-        hint: 'Open URL from marks',
         domain: ''
     },
     {
@@ -1045,12 +1137,6 @@ maps.omnibar = [
         domain: ''
     },
     {
-        oks: '<Ctrl-d>',
-        nks: '',
-        hint: 'Delete focused item from bookmark / history',
-        domain: ''
-    },
-    {
         oks: '<Ctrl-i>',
         nks: '<Ctrl-i>',
         hint: 'Edit URL with vim then open',
@@ -1060,36 +1146,6 @@ maps.omnibar = [
         oks: '<Ctrl-j>',
         nks: '<Ctrl-j>',
         hint: 'Toggle omnibar\'s position',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-.>',
-        nks: '',
-        hint: 'Show results of next page',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-,>',
-        nks: '',
-        hint: 'Show results of previous page',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-c>',
-        nks: '',
-        hint: 'Copy selected item URL',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-D>',
-        nks: '',
-        hint: 'Delete all listed items from bookmark / history',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-r>',
-        nks: '',
-        hint: 'Resort history by visit count or time',
         domain: ''
     },
     {
@@ -1121,35 +1177,65 @@ maps.omnibar = [
         nks: '<Ctrl-\'>',
         hint: 'Toggle quotes',
         domain: ''
-    },
-    {
-        oks: '<ArrowDown>',
-        nks: '',
-        hint: 'Cycle through candidates',
-        domain: ''
-    },
-    {
-        oks: '<ArrowUp>',
-        nks: '',
-        hint: 'Cycle backwards through candidates',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-n>',
-        nks: '',
-        hint: 'Cycle through candidates',
-        domain: ''
-    },
-    {
-        oks: '<Ctrl-p>',
-        nks: '',
-        hint: 'Cycle backwards through candidates',
-        domain: ''
     }
 ];
 
 maps.visual = [
+    ////////////////
+    // Unused
+    ////////////////
+    {
+        oks: 'V',
+        nks: '',
+        hint: 'Restore visual mode',
+        domain: ''
+    },
+    {
+        oks: ')',
+        nks: '',
+        hint: 'Forward sentence',
+        domain: ''
+    },
+    {
+        oks: '(',
+        nks: '',
+        hint: 'Backward sentence',
+        domain: ''
+    },
+    {
+        oks: '}',
+        nks: '',
+        hint: 'Forward paragraph',
+        domain: ''
+    },
+    {
+        oks: '{',
+        nks: '',
+        hint: 'Backward paragraph',
+        domain: ''
+    },
+    {
+        oks: 'G',
+        nks: '',
+        hint: 'Forward document boundary',
+        domain: ''
+    },
+    {
+        oks: 'gg',
+        nks: '',
+        hint: 'Backward document boundary',
+        domain: ''
+    },
+    {
+        oks: 'gr',
+        nks: '',
+        hint: 'Read selected text',
+        domain: ''
+    },
+    
+    ////////////////
     // Visual Mode
+    ////////////////
     {
         oks: '/',
         nks: '/',
@@ -1160,12 +1246,6 @@ maps.visual = [
         oks: 'zv',
         nks: 'zv',
         hint: 'Enter visual mode and select entire element',
-        domain: ''
-    },
-    {
-        oks: 'V',
-        nks: '',
-        hint: 'Restore visual mode',
         domain: ''
     },
     {
@@ -1241,51 +1321,9 @@ maps.visual = [
         domain: ''
     },
     {
-        oks: ')',
-        nks: '',
-        hint: 'Forward sentence',
-        domain: ''
-    },
-    {
-        oks: '(',
-        nks: '',
-        hint: 'Backward sentence',
-        domain: ''
-    },
-    {
-        oks: '}',
-        nks: '',
-        hint: 'Forward paragraph',
-        domain: ''
-    },
-    {
-        oks: '{',
-        nks: '',
-        hint: 'Backward paragraph',
-        domain: ''
-    },
-    {
         oks: '$',
         nks: 'L',
         hint: 'Go to beginning / end of next line',
-        domain: ''
-    },
-    {
-        oks: 'G',
-        nks: '',
-        hint: 'Forward document boundary',
-        domain: ''
-    },
-    {
-        oks: 'gg',
-        nks: '',
-        hint: 'Backward document boundary',
-        domain: ''
-    },
-    {
-        oks: 'gr',
-        nks: '',
-        hint: 'Read selected text',
         domain: ''
     },
     {
@@ -1387,7 +1425,19 @@ maps.visual = [
 ];
 
 maps.insert = [
+    ////////////////
+    // Unused
+    ////////////////
+    {
+        oks: '<Ctrl-Alt-i>',
+        nks: '',
+        hint: 'Open neovim for current field',
+        domain: ''
+    },
+
+    ////////////////
     // Insert Mode
+    ////////////////
     {
         oks: '<Ctrl-e>',
         nks: '<Ctrl-j>',
@@ -1447,55 +1497,87 @@ maps.insert = [
         nks: '<Ctrl-i>',
         hint: 'Open vim for current field',
         domain: ''
-    },
-    {
-        oks: '<Ctrl-Alt-i>',
-        nks: '',
-        hint: 'Open neovim for current field',
-        domain: ''
     }
 ];
-*/
 
-console.log(maps.normal.length);
-
-function test(temp) {
-    console.log(temp.length);
-    for (let i = 0; i < temp.length; i++) {
-        if (temp[i].nks == '') {
-            api.unmap(temp[i].oks);
+function mapNormal() {
+    let key = maps.normal;
+    for (let i = 0; i < key.length; i++) {
+        if (key[i].nks == '') {
+            console.log('unmapping ' + key[i].oks);
+            api.unmap(key[i].oks);
             continue;
         }
-        api.map(temp[i].nks, temp[i].oks, temp[i].domain, temp[i].hint);
+        api.map(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
+        if (key[i].oks != key[i].nks) {
+            api.unmap(key[i].oks);
+        }
     }
 }
 
-test(maps.normal);
-
-/*
-function createMap(a) {
-    console.log(a.length);
-    for (let i = 0; i < a.length; i++) {
-        if a[i].nks == '' {
-            api.unmap(a[i].oks);
+function mapOmnibar() {
+    let key = maps.omnibar;
+    for (let i = 0; i < key.length; i++) {
+        if (key[i].nks == '') {
+            console.log('omnibar unmapping ' + key[i].oks);
+            api.unmap(key[i].oks);
             continue;
         }
-        api.map(a[i].eks, a[i].oks, a[i].hint, a[i].domain);
-        //api.unmap(map[i].oks);
+        api.cmap(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
+        if (key[i].oks != key[i].nks) {
+            api.unmap(key[i].oks);
+        }
+    }
+}
+function mapVisual() {
+    let key = maps.visual;
+    for (let i = 0; i < key.length; i++) {
+        if (key[i].nks == '') {
+            console.log('visual unmapping ' + key[i].oks);
+            api.vunmap(key[i].oks);
+            continue;
+        }
+        api.vmap(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
+        if (key[i].oks != key[i].nks) {
+            api.vunmap(key[i].oks);
+        }
+    }
+}
+function mapInsert() {
+    let key = maps.insert;
+    for (let i = 0; i < key.length; i++) {
+        if (key[i].nks == '') {
+            console.log('insert unmapping ' + key[i].oks);
+            api.iunmap(key[i].oks);
+            continue;
+        }
+        api.imap(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
+        if (key[i].oks != key[i].nks) {
+            api.iunmap(key[i].oks);
+        }
     }
 }
 
-createMap(maps.normal[]);
-*/
-//createMap(maps.omnibar);
-//createMap(maps.visual);
-//createMap(maps.insert);
+mapNormal();
+mapOmnibar();
+mapVisual();
+mapInsert();
+////////////////////////////////////////////////////////////////
+// Domain specific mappings
+////////////////////////////////////////////////////////////////
 
-//api.mapkey('<Space>df', 'test', function() {
-//    console.log('this is just a test');
-//});
-// Netsuite
+////////////////////////////////
+// Netsuie
+////////////////////////////////
+api.mapkey('<Space>e', 'Edit form', function() {
+    console.log('this is just a test');
+    document.getElementById('edit').click();
+}, /netsuite\.com/);
 
+api.mapkey('<Space>s', 'Save form', function() {
+    console.log('this is just a test');
+    document.getElementById('btn_multibutton_submitter').click();
+}, /netsuite\.com/);
 //u = /netsuite\.com/;
 //k = leader + k;
 
