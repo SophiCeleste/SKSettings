@@ -938,8 +938,8 @@ maps.normal = [
         hint: 'Yank history',
         domain: ''
     }
-]
-
+];
+/*
 maps.omnibar = [
     // Omnibar
     {
@@ -1146,7 +1146,7 @@ maps.omnibar = [
         hint: 'Cycle backwards through candidates',
         domain: ''
     }
-]
+];
 
 maps.visual = [
     // Visual Mode
@@ -1384,7 +1384,7 @@ maps.visual = [
         hint: 'Translate selected word',
         domain: ''
     }
-]
+];
 
 maps.insert = [
     // Insert Mode
@@ -1454,28 +1454,52 @@ maps.insert = [
         hint: 'Open neovim for current field',
         domain: ''
     }
-]
+];
+*/
 
-for (let i = 0; i < maps.normal.length; i++) {
-    let oks = maps.normal[i].oks;
-    let nks = maps.normal[i].nks;
-    let hint = maps.normal[i].hint;
-    let domain = maps.normal[i].domain;
-    api.map(nks, oks, domain, hint);
-};
+console.log(maps.normal.length);
 
-api.map('<Alt-c>', '<Alt-s>');
+function test(temp) {
+    console.log(temp.length);
+    for (let i = 0; i < temp.length; i++) {
+        if (temp[i].nks == '') {
+            api.unmap(temp[i].oks);
+            continue;
+        }
+        api.map(temp[i].nks, temp[i].oks, temp[i].domain, temp[i].hint);
+    }
+}
 
-api.mapkey('<Space>df', 'test', function() {
-    console.log(maps.default[0].keystroke);
-});
-=======
+test(maps.normal);
+
+/*
+function createMap(a) {
+    console.log(a.length);
+    for (let i = 0; i < a.length; i++) {
+        if a[i].nks == '' {
+            api.unmap(a[i].oks);
+            continue;
+        }
+        api.map(a[i].eks, a[i].oks, a[i].hint, a[i].domain);
+        //api.unmap(map[i].oks);
+    }
+}
+
+createMap(maps.normal[]);
+*/
+//createMap(maps.omnibar);
+//createMap(maps.visual);
+//createMap(maps.insert);
+
+//api.mapkey('<Space>df', 'test', function() {
+//    console.log('this is just a test');
+//});
 // Netsuite
 
-u = /netsuite\.com/;
-k = leader + k;
+//u = /netsuite\.com/;
+//k = leader + k;
 
-mapKeysOld(k, h, c, u);
+//mapKeysOld(k, h, c, u);
 
-api.map('<Space>o', k);
-api.unmap(k);
+//api.map('<Space>o', k);
+//api.unmap(k);
