@@ -5,396 +5,396 @@ maps.normal = [
     // Unused
     ////////////////
     {
-        oks: 'C',
-        nks: '',
-        hint: 'Open a link in a non-active new tab',
-        domain: ''
-    },
-    {
-        oks: '<CTRL-i>',
-        nks: '',
+        old: '<CTRL-i>',
+        new: '',
         hint: 'Open input field with vim editor',
         domain: ''
     },
     {
-        oks: '<Ctrl-Alt-i>',
-        nks: '',
+        old: '<Ctrl-Alt-i>',
+        new: '',
         hint: 'Open input field with vim editor',
         domain: ''
     },
     {
-        oks: ';gt',
-        nks: '',
+        old: ';gt',
+        new: '',
         hint: 'Gather filtered tabs into current window',
         domain: ''
     },
     {
-        oks: ';gw',
-        nks: '',
+        old: ';gw',
+        new: '',
         hint: 'Gather all tabs into current window',
         domain: ''
     },
     {
-        oks: 'gu',
-        nks: '',
+        old: 'gu',
+        new: '',
         hint: 'Go up one path in the URL',
         domain: ''
     },
     {
-        oks: 'gT',
-        nks: '',
+        old: 'gT',
+        new: '',
         hint: 'Go to first activated tab',
         domain: ''
     },
     {
-        oks: 'gt',
-        nks: '',
+        old: 'gt',
+        new: '',
         hint: 'Go to last activated tab',
         domain: ''
     },
     {
-        oks: ';u',
-        nks: '',
+        old: ';u',
+        new: '',
         hint: 'Edit URL and open in new tab',
         domain: ''
     },
     {
-        oks: ';U',
-        nks: '',
+        old: ';U',
+        new: '',
         hint: 'Edit URL and reload',
         domain: ''
     },
     {
-        oks: 'B',
-        nks: '',
+        old: 'F',
+        new: '',
+        hint: 'Tab history forward',
+        domain: ''
+    },
+    {
+        old: 'B',
+        new: '',
         hint: 'Tab history back',
         domain: ''
     },
     {
-        oks: '<Ctrl-6>',
-        nks: '',
+        old: '<Ctrl-6>',
+        new: '',
         hint: 'Go to last used tab',
         domain: ''
     },
     {
-        oks: 'sg',
-        nks: '',
+        old: 'sg',
+        new: '',
         hint: 'Search Google',
         domain: ''
     },
     {
-        oks: 'sd',
-        nks: '',
+        old: 'sd',
+        new: '',
         hint: 'Search Duckduckgo',
         domain: ''
     },
     {
-        oks: 'sb',
-        nks: '',
+        old: 'sb',
+        new: '',
         hint: 'Search Baidu',
         domain: ''
     },
     {
-        oks: 'sw',
-        nks: '',
+        old: 'sw',
+        new: '',
         hint: 'Search Bing',
         domain: ''
     },
     {
-        oks: 'yG',
-        nks: '',
+        old: 'yG',
+        new: '',
         hint: 'Yank full page',
         domain: ''
     },
     {
-        oks: 'yS',
-        nks: '',
+        old: 'yS',
+        new: '',
         hint: 'Yank scrollable element',
         domain: ''
     },
     {
-        oks: 'ymv',
-        nks: '',
+        old: 'ymv',
+        new: '',
         hint: 'Yank text multiple elements',
         domain: ''
     },
     {
-        oks: 'yma',
-        nks: '',
+        old: 'yma',
+        new: '',
         hint: 'Yank multiple URLs',
         domain: ''
     },
     {
-        oks: 'ymc',
-        nks: '',
+        old: 'ymc',
+        new: '',
         hint: 'Yank multiple columns',
         domain: ''
     },
     {
-        oks: 'yg',
-        nks: '',
+        old: 'yg',
+        new: '',
         hint: 'Yank current page',
         domain: ''
     },
     {
-        oks: 'ya',
-        nks: '',
+        old: 'ya',
+        new: '',
         hint: 'Yank link URL',
         domain: ''
     },
     {
-        oks: 'yc',
-        nks: '',
+        old: 'yc',
+        new: '',
         hint: 'Yank column',
         domain: ''
     },
     {
-        oks: 'yq',
-        nks: '',
+        old: 'yq',
+        new: '',
         hint: 'Yank pre text',
         domain: ''
     },
     {
-        oks: 'ys',
-        nks: '',
+        old: 'ys',
+        new: '',
         hint: 'Yank source',
         domain: ''
     },
     {
-        oks: 'yj',
-        nks: '',
+        old: 'yj',
+        new: '',
         hint: 'Yank settings',
         domain: ''
     },
     {
-        oks: 'yY',
-        nks: '',
+        old: 'yY',
+        new: '',
         hint: 'Yank URL of all tabs',
         domain: ''
     },
     {
-        oks: 'yh',
-        nks: '',
+        old: 'yh',
+        new: '',
         hint: 'Yank host',
         domain: ''
     },
     {
-        oks: 'yl',
-        nks: '',
+        old: 'yl',
+        new: '',
         hint: 'Yank title',
         domain: ''
     },
     {
-        oks: 'yQ',
-        nks: '',
+        old: 'yQ',
+        new: '',
         hint: 'Yank query history of OmniQuery',
         domain: ''
     },
     {
-        oks: 'yp',
-        nks: '',
+        old: 'yp',
+        new: '',
         hint: 'Yank form POST',
         domain: ''
     },
     {
-        oks: 'yd',
-        nks: '',
+        old: 'yd',
+        new: '',
         hint: 'Yank downloading URL',
         domain: ''
     },
     {
-        oks: 'cq',
-        nks: '',
+        old: 'cq',
+        new: '',
         hint: 'Query word with hints',
         domain: ''
     },
     {
-        oks: 'cc',
-        nks: '',
+        old: 'cc',
+        new: '',
         hint: 'Open link clipboard / selected',
         domain: ''
     },
     {
-        oks: ';pp',
-        nks: '',
+        old: ';pp',
+        new: '',
         hint: 'Paste HTML to current page',
         domain: ''
     },
     {
-        oks: ';pj',
-        nks: '',
+        old: ';pj',
+        new: '',
         hint: 'Restore settings from keyboard',
         domain: ''
     },
     {
-        oks: ';pf',
-        nks: '',
+        old: ';pf',
+        new: '',
         hint: 'Fill form from clipboard',
         domain: ''
     },
     {
-        oks: ';cq',
-        nks: '',
+        old: ';cq',
+        new: '',
         hint: 'Clear all URLs in queue',
         domain: ''
     },
     {
-        oks: 'ga',
-        nks: '',
+        old: 'ga',
+        new: '',
         hint: 'Open Chrome about',
         domain: ''
     },
     {
-        oks: 'gb',
-        nks: '',
+        old: 'gb',
+        new: '',
         hint: 'Open Chrome bookmarks',
         domain: ''
     },
     {
-        oks: 'gc',
-        nks: '',
+        old: 'gc',
+        new: '',
         hint: 'Open Chrome cache',
         domain: ''
     },
     {
-        oks: 'gd',
-        nks: '',
+        old: 'gd',
+        new: '',
         hint: 'Open Chrome downloads',
         domain: ''
     },
     {
-        oks: 'gh',
-        nks: '',
+        old: 'gh',
+        new: '',
         hint: 'Open Chrome history',
         domain: ''
     },
     {
-        oks: 'gk',
-        nks: '',
+        old: 'gk',
+        new: '',
         hint: 'Open Chrome cookies',
         domain: ''
     },
     {
-        oks: 'ge',
-        nks: '',
+        old: 'ge',
+        new: '',
         hint: 'Open Chrome extensions',
         domain: ''
     },
     {
-        oks: 'gn',
-        nks: '',
+        old: 'gn',
+        new: '',
         hint: 'Open Chrome net-internals',
         domain: ''
     },
     {
-        oks: ';pm',
-        nks: '',
+        old: ';pm',
+        new: '',
         hint: 'Preview markdown',
         domain: ''
     },
     {
-        oks: 'cp',
-        nks: '',
+        old: 'cp',
+        new: '',
         hint: 'Toggle proxy',
         domain: ''
     },
     {
-        oks: ';pa',
-        nks: '',
+        old: ';pa',
+        new: '',
         hint: 'Proxy always',
         domain: ''
     },
     {
-        oks: ';pb',
-        nks: '',
+        old: ';pb',
+        new: '',
         hint: 'Proxy byhost',
         domain: ''
     },
     {
-        oks: ';pd',
-        nks: '',
+        old: ';pd',
+        new: '',
         hint: 'Proxy direct',
         domain: ''
     },
     {
-        oks: ';ps',
-        nks: '',
+        old: ';ps',
+        new: '',
         hint: 'Proxy system',
         domain: ''
     },
     {
-        oks: ';pc',
-        nks: '',
+        old: ';pc',
+        new: '',
         hint: 'Proxy clear',
         domain: ''
     },
     {
-        oks: ';cp',
-        nks: '',
+        old: ';cp',
+        new: '',
         hint: 'Copy proxy info',
         domain: ''
     },
     {
-        oks: ';ap',
-        nks: '',
+        old: ';ap',
+        new: '',
         hint: 'Apply proxy info from clipboard',
         domain: ''
     },
     {
-        oks: 'gr',
-        nks: '',
+        old: 'gr',
+        new: '',
         hint: 'Read text from clipboard / selected',
         domain: ''
     },
     {
-        oks: ';ph',
-        nks: '',
+        old: ';ph',
+        new: '',
         hint: 'Paste history form clipboard',
         domain: ''
     },
     {
-        oks: ';yh',
-        nks: '',
+        old: ';yh',
+        new: '',
         hint: 'Yank history',
         domain: ''
     },
-    
+
     ////////////////
     // Help
     ////////////////
     {
-        oks: '<Alt-s>',
-        nks: '<Alt-;>',    
+        old: '<Alt-s>',
+        new: '<Alt-;>',    
         hint: 'Toggle SurfingKeys on current site',
         domain: ''
     },
     {
-        oks: '<Alt-i>',
-        nks: 'p',
+        old: '<Alt-i>',
+        new: 'p',
         hint: 'Enter pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        oks: 'p',
-        nks: 'ep',
+        old: 'p',
+        new: 'ep',
         hint: 'Enter ephemeral pass through mode to temporarily suppress SurfingKeys',
         domain: ''
     },
     {
-        oks: '?',
-        nks: '?',
+        old: '?',
+        new: '?',
         hint: 'Show help',
         domain: ''
     },
     {
-        oks: ';ql',
-        nks: '<Space>.',
+        old: ';ql',
+        new: '<Space>.',
         hint: 'Show last action',
         domain: ''
     },
     {
-        oks: '.',
-        nks: '.',
+        old: '.',
+        new: '.',
         hint: 'Repeat last action',
         domain: ''
     },
@@ -403,98 +403,104 @@ maps.normal = [
     // Mouse Click
     ////////////////
     {
-        oks: 'cf',
-        nks: ';f',
-        hint: 'Open multiple links in a new tab',
+        old: 'cf',
+        new: ';f',
+        hint: 'Open multiple linew in a new tab',
         domain: ''
     },
     {
-        oks: 'gi',
-        nks: 'gi',
+        old: 'gi',
+        new: 'gi',
         hint: 'Go to the first input field',
         domain: ''
     },
     {
-        oks: 'gf',
-        nks: 'F',
+        old: 'gf',
+        new: 'F',
         hint: 'Open a link in a non-active new tab',
         domain: ''
     },
     {
-        oks: '[[',
-        nks: '[[',
+        old: 'C',
+        new: 'F',
+        hint: 'Open a link in a non-active new tab',
+        domain: ''
+    },
+    {
+        old: '[[',
+        new: '[[',
         hint: 'Clicks the previous link on the current page',
         domain: ''
     },
     {
-        oks: ']]',
-        nks: ']]',
+        old: ']]',
+        new: ']]',
         hint: 'Clicks the next link on the current page',
         domain: ''
     },
     {
-        oks: ';m',
-        nks: ';m',
+        old: ';m',
+        new: ';m',
         hint: 'Mouse out final element',
         domain: ''
     },
     {
-        oks: ';fs',
-        nks: 'sh',
+        old: ';fs',
+        new: 'sh',
         hint: 'Display hints to focus scrollable elements',
         domain: ''
     },
     {
-        oks: ';di',
-        nks: ';di',
+        old: ';di',
+        new: ';di',
         hint: 'Download image',
         domain: ''
     },
     {
-        oks: 'i',
-        nks: 'i',
+        old: 'i',
+        new: 'i',
         hint: 'Select input field',
         domain: ''
     },
     {
-        oks: 'I',
-        nks: 'I',
+        old: 'I',
+        new: 'I',
         hint: 'Open input field with vim editor',
         domain: ''
     },
     {
-        oks: 'O',
-        nks: 'O',
-        hint: 'Open detected links from selected text',
+        old: 'O',
+        new: 'O',
+        hint: 'Open detected linew from selected text',
         domain: ''
     },
     {
-        oks: 'f',
-        nks: 'f',
+        old: 'f',
+        new: 'f',
         hint: 'Open a link in the current tab',
         domain: ''
     },
     {
-        oks: 'af',
-        nks: '<Space>f',
+        old: 'af',
+        new: '<Space>f',
         hint: 'Open a link in an active new tab',
         domain: ''
     },
     {
-        oks: '<CTRL-h>',
-        nks: 'mov',
+        old: '<CTRL-h>',
+        new: 'mov',
         hint: 'Mouse over element',
         domain: ''
     },
     {
-        oks: '<CTRL-j>',
-        nks: 'mou',
+        old: '<CTRL-j>',
+        new: 'mou',
         hint: 'Mouse out element',
         domain: ''
     },
     {
-        oks: 'q',
-        nks: 'ci',
+        old: 'q',
+        new: 'ci',
         hint: 'Click on an image or button',
         domain: ''
     },
@@ -503,104 +509,104 @@ maps.normal = [
     // Scroll Page / Element
     ////////////////
     {
-        oks: '0',
-        nks: '<Space>h',
+        old: '0',
+        new: '<Space>h',
         hint: 'Scroll left end',
         domain: ''
     },
     {
-        oks: 'cS',
-        nks: 'sr',
+        old: 'cS',
+        new: 'sr',
         hint: 'Reset scroll target',
         domain: ''
     },
     {
-        oks: 'cs',
-        nks: 's;',
+        old: 'cs',
+        new: 's;',
         hint: 'Change scroll target',
         domain: ''
     },
     {
-        oks: 'e',
-        nks: 'K',
+        old: 'e',
+        new: 'K',
         hint: 'Scroll half page up',
         domain: ''
     },
     {
-        oks: 'U',
-        nks: '<Space>k',
+        old: 'U',
+        new: '<Space>k',
         hint: 'Scroll full page up',
         domain: ''
     },
     {
-        oks: 'd',
-        nks: 'J',
+        old: 'd',
+        new: 'J',
         hint: 'Scroll half page down',
         domain: ''
     },
     {
-        oks: 'P',
-        nks: '<Space>j',
+        old: 'P',
+        new: '<Space>j',
         hint: 'Scroll full page down',
         domain: ''
     },
     {
-        oks: 'gg',
-        nks: 'gg',
+        old: 'gg',
+        new: 'gg',
         hint: 'Scroll to top',
         domain: ''
     },
     {
-        oks: 'G',
-        nks: 'G',
+        old: 'G',
+        new: 'G',
         hint: 'Scroll to bottom',
         domain: ''
     },
     {
-        oks: 'j',
-        nks: 'j',
+        old: 'j',
+        new: 'j',
         hint: 'Scroll down',
         domain: ''
     },
     {
-        oks: 'k',
-        nks: 'k',
+        old: 'k',
+        new: 'k',
         hint: 'Scroll up',
         domain: ''
     },
     {
-        oks: 'h',
-        nks: 'h',
+        old: 'h',
+        new: 'h',
         hint: 'Scroll left',
         domain: ''
     },
     {
-        oks: 'l',
-        nks: 'l',
+        old: 'l',
+        new: 'l',
         hint: 'Scroll right',
         domain: ''
     },
     {
-        oks: '$',
-        nks: '<Space>l',
+        old: '$',
+        new: '<Space>l',
         hint: 'Scroll right end',
         domain: ''
     },
     {
-        oks: '%',
-        nks: '%',
+        old: '%',
+        new: '%',
         hint: 'Scroll percentage',
         domain: ''
     },
     {
-        oks: ';w',
-        nks: '<Space>m',
+        old: ';w',
+        new: '<Space>m',
         hint: 'Switch frames',
         domain: ''
     },
     {
-        oks: 'w',
-        nks: '<Space>M',
+        old: 'w',
+        new: '<Space>M',
         hint: 'Focus top frame',
         domain: ''
     },
@@ -609,146 +615,146 @@ maps.normal = [
     // Tabs
     ////////////////
     {
-        oks: 'yT',
-        nks: 'TT',
+        old: 'yT',
+        new: 'TT',
         hint: 'Duplicate tab, non active',
         domain: ''
     },
     {
-        oks: 'yv',
-        nks: 'tt',
+        old: 'yv',
+        new: 'tt',
         hint: 'Duplicate tab',
         domain: ''
     },
     {
-        oks: 'g0',
-        nks: 'th',
+        old: 'g0',
+        new: 'th',
         hint: 'Go to first tab',
         domain: ''
     },
     {
-        oks: 'g$',
-        nks: 'tl',
+        old: 'g$',
+        new: 'tl',
         hint: 'Go to last tab',
         domain: ''
     },
     {
-        oks: 'gx0',
-        nks: 'CH',
+        old: 'gx0',
+        new: 'CH',
         hint: 'Close all tabs on the left',
         domain: ''
     },
     {
-        oks: 'gxt',
-        nks: 'ch',
+        old: 'gxt',
+        new: 'ch',
         hint: 'Close tab left',
         domain: ''
     },
     {
-        oks: 'gxT',
-        nks: 'cl',
+        old: 'gxT',
+        new: 'cl',
         hint: 'Close tab right',
         domain: ''
     },
     {
-        oks: 'gx$',
-        nks: 'CL',
+        old: 'gx$',
+        new: 'CL',
         hint: 'Close all tabs on the right',
         domain: ''
     },
     {
-        oks: 'gxx',
-        nks: 'CC',
+        old: 'gxx',
+        new: 'CC',
         hint: 'Close all other tabs',
         domain: ''
     },
     {
-        oks: 'gxp',
-        nks: 'cs',
+        old: 'gxp',
+        new: 'cs',
         hint: 'Close playing tab',
         domain: ''
     },
     {
-        oks: 'E',
-        nks: 'H',
+        old: 'E',
+        new: 'H',
         hint: 'Go tab left',
         domain: ''
     },
     {
-        oks: 'R',
-        nks: 'L',
+        old: 'R',
+        new: 'L',
         hint: 'Go tab right',
         domain: ''
     },
     {
-        oks: 'T',
-        nks: 't;',
+        old: 'T',
+        new: 't;',
         hint: 'Choose a tab',
         domain: ''
     },
     {
-        oks: 'zr',
-        nks: 'zr',
+        old: 'zr',
+        new: 'zr',
         hint: 'Zoom reset',
         domain: ''
     },
     {
-        oks: 'zi',
-        nks: 'zi',
+        old: 'zi',
+        new: 'zi',
         hint: 'Zoom in',
         domain: ''
     },
     {
-        oks: 'zo',
-        nks: 'zo',
+        old: 'zo',
+        new: 'zo',
         hint: 'Zoom out',
         domain: ''
     },
     {
-        oks: '<Alt-p>',
-        nks: 'tp',
+        old: '<Alt-p>',
+        new: 'tp',
         hint: 'Pin / unpin current tab',
         domain: ''
     },
     {
-        oks: '<Alt-m>',
-        nks: 'ms',
+        old: '<Alt-m>',
+        new: 'ms',
         hint: 'Mute / unmute current tab',
         domain: ''
     },
     {
-        oks: 'on',
-        nks: '<Space>g',
+        old: 'on',
+        new: '<Space>g',
         hint: 'Open new tab',
         domain: ''
     },
     {
-        oks: 'x',
-        nks: 'x',
+        old: 'x',
+        new: 'x',
         hint: 'Close current tab',
         domain: ''
     },
     {
-        oks: 'X',
-        nks: 'X',
+        old: 'X',
+        new: 'X',
         hint: 'Reopen closed tab',
         domain: ''
     },
     {
-        oks: 'W',
-        nks: 'tm',
+        old: 'W',
+        new: 'tm',
         hint: 'Move tab to another window',
         domain: ''
     },
     {
-        oks: '<<',
-        nks: '<Shift-Space>H',
+        old: '<<',
+        new: '<Shift-Space>H',
         hint: 'Move tab left',
         domain: ''
     },
     {
-        oks: '>>',
-        nks: '<Shift-Space>L',
+        old: '>>',
+        new: '<Shift-Space>L',
         hint: 'Move tab right',
         domain: ''
     },
@@ -757,50 +763,44 @@ maps.normal = [
     // Page Navigation
     ////////////////
     {
-        oks: 'gp',
-        nks: 'gs',
+        old: 'gp',
+        new: 'gs',
         hint: 'Go to playing tab',
         domain: ''
     },
     {
-        oks: 'g?',
-        nks: 'R?',
+        old: 'g?',
+        new: 'R?',
         hint: 'Reload current tab without query string',
         domain: ''
     },
     {
-        oks: 'g#',
-        nks: 'R#',
+        old: 'g#',
+        new: 'R#',
         hint: 'Reload current tab without hash fragment',
         domain: ''
     },
     {
-        oks: 'gU',
-        nks: '<Space>r',
+        old: 'gU',
+        new: '<Space>r',
         hint: 'Go to root URL',
         domain: ''
     },
     {
-        oks: 'F',
-        nks: 'zr',
-        hint: 'Tab history forward',
-        domain: ''
-    },
-    {
-        oks: 'S',
-        nks: 'S',
+        old: 'S',
+        new: 'S',
         hint: 'History back',
         domain: ''
     },
     {
-        oks: 'D',
-        nks: 'D',
+        old: 'D',
+        new: 'D',
         hint: 'History forward',
         domain: ''
     },
     {
-        oks: 'r',
-        nks: 'r',
+        old: 'r',
+        new: 'r',
         hint: 'Reload current tab',
         domain: ''
     },
@@ -809,14 +809,14 @@ maps.normal = [
     // Sessions
     ////////////////
     {
-        oks: 'ZZ',
-        nks: 'ZZ',
+        old: 'ZZ',
+        new: 'ZZ',
         hint: 'Save session and quit',
         domain: ''
     },
     {
-        oks: 'ZR',
-        nks: 'ZR',
+        old: 'ZR',
+        new: 'ZR',
         hint: 'Restore last session',
         domain: ''
     },
@@ -825,26 +825,26 @@ maps.normal = [
     // Search Selected With
     ////////////////
     {
-        oks: 'se',
-        nks: 'sk',
+        old: 'se',
+        new: 'sk',
         hint: 'Search Wikipedia',
         domain: ''
     },
     {
-        oks: 'ss',
-        nks: 'ss',
+        old: 'ss',
+        new: 'ss',
         hint: 'Search Stackoverflow',
         domain: ''
     },
     {
-        oks: 'sh',
-        nks: 'si',
+        old: 'sh',
+        new: 'si',
         hint: 'Search Github',
         domain: ''
     },
     {
-        oks: 'sy',
-        nks: 'sy',
+        old: 'sy',
+        new: 'sy',
         hint: 'Search Youtube',
         domain: ''
     },
@@ -853,26 +853,26 @@ maps.normal = [
     // Clipboard
     ////////////////
     {
-        oks: 'yi',
-        nks: 'yi',
+        old: 'yi',
+        new: 'yi',
         hint: 'Yank input',
         domain: ''
     },
     {
-        oks: 'yt',
-        nks: 'yt',
+        old: 'yt',
+        new: 'yt',
         hint: 'Yank text',
         domain: ''
     },
     {
-        oks: 'yy',
-        nks: 'yy',
+        old: 'yy',
+        new: 'yy',
         hint: 'Yank current URL',
         domain: ''
     },
     {
-        oks: 'yf',
-        nks: 'yf',
+        old: 'yf',
+        new: 'yf',
         hint: 'Yank form JSON',
         domain: ''
     },
@@ -881,20 +881,20 @@ maps.normal = [
     // Vim-like Marks
     ////////////////
     {
-        oks: 'm',
-        nks: 'm',
+        old: 'm',
+        new: 'm',
         hint: 'Add URL to marks',
         domain: ''
     },
     {
-        oks: '\'',
-        nks: 'M',
+        old: '\'',
+        new: 'M',
         hint: 'Jump to mark',
         domain: ''
     },
     {
-        oks: '<Ctrl-\'',
-        nks: '<Space>m',
+        old: '<Ctrl-\'',
+        new: '<Space>m',
         hint: 'Jump to mark new tab',
         domain: ''
     },
@@ -903,14 +903,14 @@ maps.normal = [
     // Settings
     ////////////////
     {
-        oks: ';e',
-        nks: ';e',
+        old: ';e',
+        new: ';e',
         hint: 'Edit settings',
         domain: ''
     },
     {
-        oks: ';v',
-        nks: ';v',
+        old: ';v',
+        new: ';v',
         hint: 'Open neovim',
         domain: ''
     },
@@ -919,20 +919,20 @@ maps.normal = [
     // Chrome URLs
     ////////////////
     {
-        oks: 'gs',
-        nks: 'gs',
+        old: 'gs',
+        new: 'gs',
         hint: 'View page source',
         domain: ''
     },
     {
-        oks: ';i',
-        nks: ';i',
+        old: ';i',
+        new: ';i',
         hint: 'Open Chrome inspect',
         domain: ''
     },
     {
-        oks: ';j',
-        nks: ';j',
+        old: ';j',
+        new: ';j',
         hint: 'Close downloads',
         domain: ''
     },
@@ -941,26 +941,26 @@ maps.normal = [
     // Misc
     ////////////////
     {
-        oks: ';s',
-        nks: ';s',
+        old: ';s',
+        new: ';s',
         hint: 'Toggle PDF viewer',
         domain: ''
     },
     {
-        oks: ';t',
-        nks: ';t',
+        old: ';t',
+        new: ';t',
         hint: 'Translate selected text',
         domain: ''
     },
     {
-        oks: ';dh',
-        nks: ';dh',
+        old: ';dh',
+        new: ';dh',
         hint: 'Delete history older than 30 days',
         domain: ''
     },
     {
-        oks: ';db',
-        nks: ';xb',
+        old: ';db',
+        new: ';xb',
         hint: 'Remove current bookmark',
         domain: ''
     }
@@ -971,74 +971,74 @@ maps.omnibar = [
     // Unused
     ////////////////
     {
-        oks: 'Q',
-        nks: '',
+        old: 'Q',
+        new: '',
         hint: 'Open omnibar for translation',
         domain: ''
     },
     {
-        oks: 'om',
-        nks: '',
+        old: 'om',
+        new: '',
         hint: 'Open URL from marks',
         domain: ''
     },
     {
-        oks: '<Ctrl-d>',
-        nks: '',
+        old: '<Ctrl-d>',
+        new: '',
         hint: 'Delete focused item from bookmark / history',
         domain: ''
     },
     {
-        oks: '<Ctrl-.>',
-        nks: '',
+        old: '<Ctrl-.>',
+        new: '',
         hint: 'Show results of next page',
         domain: ''
     },
     {
-        oks: '<Ctrl-,>',
-        nks: '',
+        old: '<Ctrl-,>',
+        new: '',
         hint: 'Show results of previous page',
         domain: ''
     },
     {
-        oks: '<Ctrl-c>',
-        nks: '',
+        old: '<Ctrl-c>',
+        new: '',
         hint: 'Copy selected item URL',
         domain: ''
     },
     {
-        oks: '<Ctrl-D>',
-        nks: '',
+        old: '<Ctrl-D>',
+        new: '',
         hint: 'Delete all listed items from bookmark / history',
         domain: ''
     },
     {
-        oks: '<Ctrl-r>',
-        nks: '',
+        old: '<Ctrl-r>',
+        new: '',
         hint: 'Resort history by visit count or time',
         domain: ''
     },
     {
-        oks: '<ArrowDown>',
-        nks: '',
+        old: '<ArrowDown>',
+        new: '',
         hint: 'Cycle through candidates',
         domain: ''
     },
     {
-        oks: '<ArrowUp>',
-        nks: '',
+        old: '<ArrowUp>',
+        new: '',
         hint: 'Cycle backwards through candidates',
         domain: ''
     },
     {
-        oks: '<Ctrl-n>',
-        nks: '',
+        old: '<Ctrl-n>',
+        new: '',
         hint: 'Cycle through candidates',
         domain: ''
     },
     {
-        oks: '<Ctrl-p>',
-        nks: '',
+        old: '<Ctrl-p>',
+        new: '',
         hint: 'Cycle backwards through candidates',
         domain: ''
     },
@@ -1047,134 +1047,134 @@ maps.omnibar = [
     // Omnibar
     ////////////////
     {
-        oks: 'go',
-        nks: 'go',
+        old: 'go',
+        new: 'go',
         hint: 'Open URL in current tab',
         domain: ''
     },
     {
-        oks: 'ab',
-        nks: 'ab',
+        old: 'ab',
+        new: 'ab',
         hint: 'Bookmark page to folder',
         domain: ''
     },
     {
-        oks: 'oi',
-        nks: 'oi',
+        old: 'oi',
+        new: 'oi',
         hint: 'Incognito',
         domain: ''
     },
     {
-        oks: 'og',
-        nks: 'og',
+        old: 'og',
+        new: 'og',
         hint: 'Open search g',
         domain: ''
     },
     {
-        oks: 'od',
-        nks: 'od',
+        old: 'od',
+        new: 'od',
         hint: 'Open search d',
         domain: ''
     },
     {
-        oks: 'ob',
-        nks: 'ob',
+        old: 'ob',
+        new: 'ob',
         hint: 'Open search b',
         domain: ''
     },
     {
-        oks: 'oe',
-        nks: 'oe',
+        old: 'oe',
+        new: 'oe',
         hint: 'Open search e',
         domain: ''
     },
     {
-        oks: 'ow',
-        nks: 'ow',
+        old: 'ow',
+        new: 'ow',
         hint: 'Open search w',
         domain: ''
     },
     {
-        oks: 'os',
-        nks: 'os',
+        old: 'os',
+        new: 'os',
         hint: 'Open search s',
         domain: ''
     },
     {
-        oks: 'oy',
-        nks: 'oy',
+        old: 'oy',
+        new: 'oy',
         hint: 'Open search y',
         domain: ''
     },
     {
-        oks: 'ox',
-        nks: 'ox',
+        old: 'ox',
+        new: 'ox',
         hint: 'Open recently closed URL',
         domain: ''
     },
     {
-        oks: 'oh',
-        nks: 'oh',
+        old: 'oh',
+        new: 'oh',
         hint: 'Open URL from history',
         domain: ''
     },
     {
-        oks: ':',
-        nks: ':',
+        old: ':',
+        new: ':',
         hint: 'Open commands',
         domain: ''
     },
     {
-        oks: 't',
-        nks: 't',
+        old: 't',
+        new: 't',
         hint: 'Open URL',
         domain: ''
     },
     {
-        oks: 'b',
-        nks: 'b',
+        old: 'b',
+        new: 'b',
         hint: 'Open a bookmark',
         domain: ''
     },
     {
-        oks: '<Ctrl-i>',
-        nks: '<Ctrl-i>',
+        old: '<Ctrl-i>',
+        new: '<Ctrl-i>',
         hint: 'Edit URL with vim then open',
         domain: ''
     },
     {
-        oks: '<Ctrl-j>',
-        nks: '<Ctrl-j>',
+        old: '<Ctrl-j>',
+        new: '<Ctrl-j>',
         hint: 'Toggle omnibar\'s position',
         domain: ''
     },
     {
-        oks: '<Esc>',
-        nks: '<Esc>',
+        old: '<Esc>',
+        new: '<Esc>',
         hint: 'Close omnibar',
         domain: ''
     },
     {
-        oks: '<Ctrl-m>',
-        nks: '<Ctrl-m>',
+        old: '<Ctrl-m>',
+        new: '<Ctrl-m>',
         hint: 'Mark selected item',
         domain: ''
     },
     {
-        oks: '<Tab>',
-        nks: '<Tab>',
+        old: '<Tab>',
+        new: '<Tab>',
         hint: 'Cycle through candidates',
         domain: ''
     },
     {
-        oks: '<Shift-Tab>',
-        nks: '<Shift-Tab>',
+        old: '<Shift-Tab>',
+        new: '<Shift-Tab>',
         hint: 'Cycle backwards through candidates',
         domain: ''
     },
     {
-        oks: '<Ctrl-\'>',
-        nks: '<Ctrl-\'>',
+        old: '<Ctrl-\'>',
+        new: '<Ctrl-\'>',
         hint: 'Toggle quotes',
         domain: ''
     }
@@ -1185,240 +1185,240 @@ maps.visual = [
     // Unused
     ////////////////
     {
-        oks: 'V',
-        nks: '',
+        old: 'V',
+        new: '',
         hint: 'Restore visual mode',
         domain: ''
     },
     {
-        oks: ')',
-        nks: '',
+        old: ')',
+        new: '',
         hint: 'Forward sentence',
         domain: ''
     },
     {
-        oks: '(',
-        nks: '',
+        old: '(',
+        new: '',
         hint: 'Backward sentence',
         domain: ''
     },
     {
-        oks: '}',
-        nks: '',
+        old: '}',
+        new: '',
         hint: 'Forward paragraph',
         domain: ''
     },
     {
-        oks: '{',
-        nks: '',
+        old: '{',
+        new: '',
         hint: 'Backward paragraph',
         domain: ''
     },
     {
-        oks: 'G',
-        nks: '',
+        old: 'G',
+        new: '',
         hint: 'Forward document boundary',
         domain: ''
     },
     {
-        oks: 'gg',
-        nks: '',
+        old: 'gg',
+        new: '',
         hint: 'Backward document boundary',
         domain: ''
     },
     {
-        oks: 'gr',
-        nks: '',
+        old: 'gr',
+        new: '',
         hint: 'Read selected text',
         domain: ''
     },
-    
+
     ////////////////
     // Visual Mode
     ////////////////
     {
-        oks: '/',
-        nks: '/',
+        old: '/',
+        new: '/',
         hint: 'Find',
         domain: ''
     },
     {
-        oks: 'zv',
-        nks: 'zv',
+        old: 'zv',
+        new: 'zv',
         hint: 'Enter visual mode and select entire element',
         domain: ''
     },
     {
-        oks: '*',
-        nks: '*',
+        old: '*',
+        new: '*',
         hint: 'Find selected text',
         domain: ''
     },
     {
-        oks: 'v',
-        nks: 'v',
+        old: 'v',
+        new: 'v',
         hint: 'Toggle visual mode',
         domain: ''
     },
     {
-        oks: 'n',
-        nks: 'n',
+        old: 'n',
+        new: 'n',
         hint: 'Find next match',
         domain: ''
     },
     {
-        oks: 'N',
-        nks: 'N',
+        old: 'N',
+        new: 'N',
         hint: 'Find previous match',
         domain: ''
     },
     {
-        oks: '0',
-        nks: 'H',
+        old: '0',
+        new: 'H',
         hint: 'Go to beginning / end of previous line',
         domain: ''
     },
     {
-        oks: 'l',
-        nks: 'l',
+        old: 'l',
+        new: 'l',
         hint: 'Cursor right',
         domain: ''
     },
     {
-        oks: 'h',
-        nks: 'h',
+        old: 'h',
+        new: 'h',
         hint: 'Cursor left',
         domain: ''
     },
     {
-        oks: 'j',
-        nks: 'j',
+        old: 'j',
+        new: 'j',
         hint: 'Cursor down',
         domain: ''
     },
     {
-        oks: 'k',
-        nks: 'k',
+        old: 'k',
+        new: 'k',
         hint: 'Cursor up',
         domain: ''
     },
     {
-        oks: 'w',
-        nks: 'w',
+        old: 'w',
+        new: 'w',
         hint: 'Go to beginning of next word',
         domain: ''
     },
     {
-        oks: 'e',
-        nks: 'e',
+        old: 'e',
+        new: 'e',
         hint: 'Go to beginning of next word',
         domain: ''
     },
     {
-        oks: 'b',
-        nks: 'W',
+        old: 'b',
+        new: 'W',
         hint: 'Go to the beginning of previous word',
         domain: ''
     },
     {
-        oks: '$',
-        nks: 'L',
+        old: '$',
+        new: 'L',
         hint: 'Go to beginning / end of next line',
         domain: ''
     },
     {
-        oks: 'o',
-        nks: 'o',
+        old: 'o',
+        new: 'o',
         hint: 'Go to other end of selection',
         domain: ''
     },
     {
-        oks: '<Enter>',
-        nks: '<Enter>',
+        old: '<Enter>',
+        new: '<Enter>',
         hint: 'Click element under cursor',
         domain: ''
     },
     {
-        oks: '<Shift-Enter>',
-        nks: '<Shift-Enter>',
+        old: '<Shift-Enter>',
+        new: '<Shift-Enter>',
         hint: 'Click element under cursor new tab',
         domain: ''
     },
     {
-        oks: 'zt',
-        nks: 'zt',
+        old: 'zt',
+        new: 'zt',
         hint: 'Move cursor to top of window',
         domain: ''
     },
     {
-        oks: 'zz',
-        nks: 'zz',
+        old: 'zz',
+        new: 'zz',
         hint: 'Move cursor to center of window',
         domain: ''
     },
     {
-        oks: 'zb',
-        nks: 'zb',
+        old: 'zb',
+        new: 'zb',
         hint: 'Move cursor to bottom of window',
         domain: ''
     },
     {
-        oks: 'f',
-        nks: 'f',
+        old: 'f',
+        new: 'f',
         hint: 'Jump to next <char>',
         domain: ''
     },
     {
-        oks: 'F',
-        nks: 'F',
+        old: 'F',
+        new: 'F',
         hint: 'Jump to previous <char>',
         domain: ''
     },
     {
-        oks: ';',
-        nks: '.',
+        old: ';',
+        new: '.',
         hint: 'Repeat last f / F',
         domain: ''
     },
     {
-        oks: ',',
-        nks: ',',
+        old: ',',
+        new: ',',
         hint: 'Repeat last f / F in opposite direction',
         domain: ''
     },
     {
-        oks: 'p',
-        nks: 'p',
+        old: 'p',
+        new: 'p',
         hint: 'Expand selection to parent element',
         domain: ''
     },
     {
-        oks: 'V',
-        nks: 'V',
+        old: 'V',
+        new: 'V',
         hint: 'Select a (w)ord, (l)ine, (s)entence, or (p)aragraph',
         domain: ''
     },
     {
-        oks: '<Ctrl-u>',
-        nks: '<Ctrl-j>',
+        old: '<Ctrl-u>',
+        new: '<Ctrl-j>',
         hint: 'Jump 20 lines up',
         domain: ''
     },
     {
-        oks: '<Ctrl-d>',
-        nks: '<Ctrl-k>',
+        old: '<Ctrl-d>',
+        new: '<Ctrl-k>',
         hint: 'Jump 20 lines down',
         domain: ''
     },
     {
-        oks: 't',
-        nks: 'Q',
+        old: 't',
+        new: 'Q',
         hint: 'Translate selected text',
         domain: ''
     },
     {
-        oks: 'q',
-        nks: 'q',
+        old: 'q',
+        new: 'q',
         hint: 'Translate selected word',
         domain: ''
     }
@@ -1429,8 +1429,8 @@ maps.insert = [
     // Unused
     ////////////////
     {
-        oks: '<Ctrl-Alt-i>',
-        nks: '',
+        old: '<Ctrl-Alt-i>',
+        new: '',
         hint: 'Open neovim for current field',
         domain: ''
     },
@@ -1439,62 +1439,62 @@ maps.insert = [
     // Insert Mode
     ////////////////
     {
-        oks: '<Ctrl-e>',
-        nks: '<Ctrl-j>',
+        old: '<Ctrl-e>',
+        new: '<Ctrl-j>',
         hint: 'Move cursor to end of line',
         domain: ''
     },
     {
-        oks: '<Ctrl-f>',
-        nks: '<Ctrl-k>',
+        old: '<Ctrl-f>',
+        new: '<Ctrl-k>',
         hint: 'Move cursor to beginning of line',
         domain: ''
     },
     {
-        oks: '<Ctrl-u>',
-        nks: '<Ctrl-dd>',
+        old: '<Ctrl-u>',
+        new: '<Ctrl-dd>',
         hint: 'Delete all characters before the cursor',
         domain: ''
     },
     {
-        oks: '<Alt-b>',
-        nks: '<Ctrl-h>',
+        old: '<Alt-b>',
+        new: '<Ctrl-h>',
         hint: 'Jump back a word',
         domain: ''
     },
     {
-        oks: '<Alt-f>',
-        nks: '<Ctrl-l>',
+        old: '<Alt-f>',
+        new: '<Ctrl-l>',
         hint: 'Jump forward a word',
         domain: ''
     },
     {
-        oks: '<Alt-w>',
-        nks: '<Alt-h>',
+        old: '<Alt-w>',
+        new: '<Alt-h>',
         hint: 'Delete previous word',
         domain: ''
     },
     {
-        oks: '<Alt-d>',
-        nks: '<Alt-l>',
+        old: '<Alt-d>',
+        new: '<Alt-l>',
         hint: 'Delete next word',
         domain: ''
     },
     {
-        oks: '<Esc>',
-        nks: '<Esc>',
+        old: '<Esc>',
+        new: '<Esc>',
         hint: 'Exit insert mode',
         domain: ''
     },
     {
-        oks: '<Ctrl-\'>',
-        nks: '<Ctrl-\'>',
+        old: '<Ctrl-\'>',
+        new: '<Ctrl-\'>',
         hint: 'Toggle quotes',
         domain: ''
     },
     {
-        oks: '<Ctrl-i>',
-        nks: '<Ctrl-i>',
+        old: '<Ctrl-i>',
+        new: '<Ctrl-i>',
         hint: 'Open vim for current field',
         domain: ''
     }
@@ -1503,14 +1503,13 @@ maps.insert = [
 function mapNormal() {
     let key = maps.normal;
     for (let i = 0; i < key.length; i++) {
-        if (key[i].nks == '') {
-            console.log('unmapping ' + key[i].oks);
-            api.unmap(key[i].oks);
+        if (key[i].new == '') {
+            api.unmap(key[i].old);
             continue;
         }
-        api.map(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
-        if (key[i].oks != key[i].nks) {
-            api.unmap(key[i].oks);
+        api.map(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        if (key[i].old != key[i].new) {
+            api.unmap(key[i].old);
         }
     }
 }
@@ -1518,42 +1517,39 @@ function mapNormal() {
 function mapOmnibar() {
     let key = maps.omnibar;
     for (let i = 0; i < key.length; i++) {
-        if (key[i].nks == '') {
-            console.log('omnibar unmapping ' + key[i].oks);
-            api.unmap(key[i].oks);
+        if (key[i].new == '') {
+            api.unmap(key[i].old);
             continue;
         }
-        api.cmap(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
-        if (key[i].oks != key[i].nks) {
-            api.unmap(key[i].oks);
+        api.cmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        if (key[i].old != key[i].new) {
+            api.unmap(key[i].old);
         }
     }
 }
 function mapVisual() {
     let key = maps.visual;
     for (let i = 0; i < key.length; i++) {
-        if (key[i].nks == '') {
-            console.log('visual unmapping ' + key[i].oks);
-            api.vunmap(key[i].oks);
+        if (key[i].new == '') {
+            api.vunmap(key[i].old);
             continue;
         }
-        api.vmap(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
-        if (key[i].oks != key[i].nks) {
-            api.vunmap(key[i].oks);
+        api.vmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        if (key[i].old != key[i].new) {
+            api.vunmap(key[i].old);
         }
     }
 }
 function mapInsert() {
     let key = maps.insert;
     for (let i = 0; i < key.length; i++) {
-        if (key[i].nks == '') {
-            console.log('insert unmapping ' + key[i].oks);
-            api.iunmap(key[i].oks);
+        if (key[i].new == '') {
+            api.iunmap(key[i].old);
             continue;
         }
-        api.imap(key[i].nks, key[i].oks, key[i].domain, key[i].hint);
-        if (key[i].oks != key[i].nks) {
-            api.iunmap(key[i].oks);
+        api.imap(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        if (key[i].old != key[i].new) {
+            api.iunmap(key[i].old);
         }
     }
 }
