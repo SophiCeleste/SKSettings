@@ -358,6 +358,12 @@ maps.normal = [
         hint: 'Yank history',
         domain: ''
     },
+    {
+        old: 'on',
+        new: '',
+        hint: 'Open new tab',
+        domain: ''
+    },
 
     ////////////////
     // Help
@@ -388,7 +394,7 @@ maps.normal = [
     },
     {
         old: ';ql',
-        new: '<Space>.',
+        new: '<Ctrl>.',
         hint: 'Show last action',
         domain: ''
     },
@@ -422,7 +428,7 @@ maps.normal = [
     },
     {
         old: 'C',
-        new: 'F',
+        new: 'nf',
         hint: 'Open a link in a non-active new tab',
         domain: ''
     },
@@ -482,7 +488,7 @@ maps.normal = [
     },
     {
         old: 'af',
-        new: '<Space>f',
+        new: 'af',
         hint: 'Open a link in an active new tab',
         domain: ''
     },
@@ -510,7 +516,7 @@ maps.normal = [
     ////////////////
     {
         old: '0',
-        new: '<Space>h',
+        new: 'zh',
         hint: 'Scroll left end',
         domain: ''
     },
@@ -534,7 +540,7 @@ maps.normal = [
     },
     {
         old: 'U',
-        new: '<Space>k',
+        new: '',
         hint: 'Scroll full page up',
         domain: ''
     },
@@ -546,7 +552,7 @@ maps.normal = [
     },
     {
         old: 'P',
-        new: '<Space>j',
+        new: '',
         hint: 'Scroll full page down',
         domain: ''
     },
@@ -588,7 +594,7 @@ maps.normal = [
     },
     {
         old: '$',
-        new: '<Space>l',
+        new: 'zl',
         hint: 'Scroll right end',
         domain: ''
     },
@@ -600,13 +606,13 @@ maps.normal = [
     },
     {
         old: ';w',
-        new: '<Space>m',
+        new: 'u',
         hint: 'Switch frames',
         domain: ''
     },
     {
         old: 'w',
-        new: '<Space>M',
+        new: 'U',
         hint: 'Focus top frame',
         domain: ''
     },
@@ -616,14 +622,14 @@ maps.normal = [
     ////////////////
     {
         old: 'yT',
-        new: 'TT',
+        new: 'tn',
         hint: 'Duplicate tab, non active',
         domain: ''
     },
     {
-        old: 'yv',
+        old: 'yt',
         new: 'tt',
-        hint: 'Duplicate tab',
+        hint: 'duplucate tab',
         domain: ''
     },
     {
@@ -723,12 +729,6 @@ maps.normal = [
         domain: ''
     },
     {
-        old: 'on',
-        new: '<Space>g',
-        hint: 'Open new tab',
-        domain: ''
-    },
-    {
         old: 'x',
         new: 'x',
         hint: 'Close current tab',
@@ -782,7 +782,7 @@ maps.normal = [
     },
     {
         old: 'gU',
-        new: '<Space>r',
+        new: ';;',
         hint: 'Go to root URL',
         domain: ''
     },
@@ -859,11 +859,13 @@ maps.normal = [
         domain: ''
     },
     {
-        old: 'yt',
+        old: 'yv',
         new: 'yt',
         hint: 'Yank text',
         domain: ''
     },
+    /*
+    */
     {
         old: 'yy',
         new: 'yy',
@@ -894,7 +896,7 @@ maps.normal = [
     },
     {
         old: '<Ctrl-\'',
-        new: '<Space>m',
+        new: 'am',
         hint: 'Jump to mark new tab',
         domain: ''
     },
@@ -1126,7 +1128,7 @@ maps.omnibar = [
     },
     {
         old: 't',
-        new: 't',
+        new: 'ou',
         hint: 'Open URL',
         domain: ''
     },
@@ -1505,12 +1507,16 @@ function mapNormal() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.unmap(key[i].old);
+            console.log(i + ' empty');
             continue;
         }
-        api.map(key[i].new, key[i].old, key[i].domain, key[i].hint);
-        if (key[i].old != key[i].new) {
-            api.unmap(key[i].old);
+        if (key[i].old == key[i].new) {
+            console.log(i + ' skip');
+            continue;
         }
+        console.log(i + ' remap ' + key[i].hint);
+        api.map(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        api.unmap(key[i].old);
     }
 }
 
@@ -1519,12 +1525,16 @@ function mapOmnibar() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.unmap(key[i].old);
+            console.log(i + ' empty');
             continue;
         }
-        api.cmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
-        if (key[i].old != key[i].new) {
-            api.unmap(key[i].old);
+        if (key[i].old == key[i].new) {
+            console.log(i + ' skip');
+            continue;
         }
+        console.log(i + ' remap ' + key[i].hint);
+        api.cmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        api.unmap(key[i].old);
     }
 }
 function mapVisual() {
@@ -1532,12 +1542,16 @@ function mapVisual() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.vunmap(key[i].old);
+            console.log(i + ' empty');
             continue;
         }
-        api.vmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
-        if (key[i].old != key[i].new) {
-            api.vunmap(key[i].old);
+        if (key[i].old == key[i].new) {
+            console.log(i + ' skip');
+            continue;
         }
+        console.log(i + ' remap ' + key[i].hint);
+        api.vmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        api.vunmap(key[i].old);
     }
 }
 function mapInsert() {
@@ -1545,12 +1559,16 @@ function mapInsert() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.iunmap(key[i].old);
+            console.log(i + ' empty');
             continue;
         }
-        api.imap(key[i].new, key[i].old, key[i].domain, key[i].hint);
-        if (key[i].old != key[i].new) {
-            api.iunmap(key[i].old);
+        if (key[i].old == key[i].new) {
+            console.log(i + ' skip');
+            continue;
         }
+        console.log(i + ' remap ' + key[i].hint);
+        api.imap(key[i].new, key[i].old, key[i].domain, key[i].hint);
+        api.iunmap(key[i].old);
     }
 }
 
@@ -1566,18 +1584,14 @@ mapInsert();
 // Netsuie
 ////////////////////////////////
 api.mapkey('<Space>e', 'Edit form', function() {
-    console.log('this is just a test');
     document.getElementById('edit').click();
 }, /netsuite\.com/);
 
 api.mapkey('<Space>s', 'Save form', function() {
-    console.log('this is just a test');
     document.getElementById('btn_multibutton_submitter').click();
 }, /netsuite\.com/);
-//u = /netsuite\.com/;
-//k = leader + k;
 
-//mapKeysOld(k, h, c, u);
-
-//api.map('<Space>o', k);
-//api.unmap(k);
+api.mapkey('<Space>no', 'New order', function() {
+    let id = document.getElementById('id').value;
+    window.location.href = "javascript:document.location='/app/accounting/transactions/salesord.nl?entity=" + id + "&whence='"
+}, /netsuite\.com/);
