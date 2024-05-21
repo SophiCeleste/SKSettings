@@ -1577,21 +1577,52 @@ mapOmnibar();
 mapVisual();
 mapInsert();
 ////////////////////////////////////////////////////////////////
+// Global mappings
+////////////////////////////////////////////////////////////////
+let memory = '';
+api.mapkey('<Space>ms', 'Store clipboard', function() {
+    navigator.clipboard.readText()
+        .then(text => {
+            console.log('Clipboard content: ', text);
+            memory = text;
+        })
+        .catch(err => {
+            console.error('Failed to read clipboard content', err);
+        });
+    console.log(memory);
+});
+
+api.mapkey('<Space>mr', 'Recall clipboard', function() {
+    navigator.clipboard.writeText(memory.value());
+});
+////////////////////////////////////////////////////////////////
 // Domain specific mappings
 ////////////////////////////////////////////////////////////////
 
 ////////////////////////////////
 // Netsuie
 ////////////////////////////////
-api.mapkey('<Space>e', 'Edit form', function() {
+api.mapkey('<Space>i', 'Edit form', function() {
     document.getElementById('edit').click();
 }, /netsuite\.com/);
 
-api.mapkey('<Space>s', 'Save form', function() {
+api.mapkey('<Space>w', 'Save form', function() {
     document.getElementById('btn_multibutton_submitter').click();
 }, /netsuite\.com/);
 
 api.mapkey('<Space>no', 'New order', function() {
     let id = document.getElementById('id').value;
     window.location.href = "javascript:document.location='/app/accounting/transactions/salesord.nl?entity=" + id + "&whence='"
+}, /netsuite\.com/);
+
+api.mapkey('<Space>rma', 'Fill order with case info', function() {
+    console.log(memory);
+    document.getElementById('memo').value = memory + ' - 100% RMA - Ready to book';
+    let field = document.getElementById('custbody_finance');
+    let value = field.value;
+    field.value = '100% RMA\r\n\r\n' + value;
+    field = document.getElementById('custbody_logistics');
+    value = field.value;
+    field.value = '100% RMA\r\n\r\n' + value;
+    document.getElementById('custbody_si_support_case_display').value = memory;
 }, /netsuite\.com/);
