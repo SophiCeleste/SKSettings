@@ -1,9 +1,9 @@
 const maps = {}
 
 maps.normal = [
-    ////////////////
+    ////////////////////////////////
     // Unused
-    ////////////////
+    ////////////////////////////////
     {
         old: '<CTRL-i>',
         new: '',
@@ -365,9 +365,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Help
-    ////////////////
+    ////////////////////////////////
     {
         old: '<Alt-s>',
         new: '<Alt-;>',    
@@ -405,9 +405,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Mouse Click
-    ////////////////
+    ////////////////////////////////
     {
         old: 'cf',
         new: ';f',
@@ -511,9 +511,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Scroll Page / Element
-    ////////////////
+    ////////////////////////////////
     {
         old: '0',
         new: 'zh',
@@ -617,9 +617,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Tabs
-    ////////////////
+    ////////////////////////////////
     {
         old: 'yT',
         new: 'tn',
@@ -759,9 +759,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Page Navigation
-    ////////////////
+    ////////////////////////////////
     {
         old: 'gp',
         new: 'gs',
@@ -805,9 +805,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Sessions
-    ////////////////
+    ////////////////////////////////
     {
         old: 'ZZ',
         new: 'ZZ',
@@ -821,9 +821,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Search Selected With
-    ////////////////
+    ////////////////////////////////
     {
         old: 'se',
         new: 'sk',
@@ -849,9 +849,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Clipboard
-    ////////////////
+    ////////////////////////////////
     {
         old: 'yi',
         new: 'yi',
@@ -879,12 +879,12 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Vim-like Marks
-    ////////////////
+    ////////////////////////////////
     {
         old: 'm',
-        new: 'm',
+        new: 'ma',
         hint: 'Add URL to marks',
         domain: ''
     },
@@ -901,9 +901,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Settings
-    ////////////////
+    ////////////////////////////////
     {
         old: ';e',
         new: ';e',
@@ -917,9 +917,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Chrome URLs
-    ////////////////
+    ////////////////////////////////
     {
         old: 'gs',
         new: 'gs',
@@ -939,9 +939,9 @@ maps.normal = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Misc
-    ////////////////
+    ////////////////////////////////
     {
         old: ';s',
         new: ';s',
@@ -969,9 +969,9 @@ maps.normal = [
 ];
 
 maps.omnibar = [
-    ////////////////
+    ////////////////////////////////
     // Unused
-    ////////////////
+    ////////////////////////////////
     {
         old: 'Q',
         new: '',
@@ -1045,9 +1045,9 @@ maps.omnibar = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Omnibar
-    ////////////////
+    ////////////////////////////////
     {
         old: 'go',
         new: 'go',
@@ -1183,9 +1183,9 @@ maps.omnibar = [
 ];
 
 maps.visual = [
-    ////////////////
+    ////////////////////////////////
     // Unused
-    ////////////////
+    ////////////////////////////////
     {
         old: 'V',
         new: '',
@@ -1235,9 +1235,9 @@ maps.visual = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Visual Mode
-    ////////////////
+    ////////////////////////////////
     {
         old: '/',
         new: '/',
@@ -1427,9 +1427,9 @@ maps.visual = [
 ];
 
 maps.insert = [
-    ////////////////
+    ////////////////////////////////
     // Unused
-    ////////////////
+    ////////////////////////////////
     {
         old: '<Ctrl-Alt-i>',
         new: '',
@@ -1437,9 +1437,9 @@ maps.insert = [
         domain: ''
     },
 
-    ////////////////
+    ////////////////////////////////
     // Insert Mode
-    ////////////////
+    ////////////////////////////////
     {
         old: '<Ctrl-e>',
         new: '<Ctrl-j>',
@@ -1507,14 +1507,14 @@ function mapNormal() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.unmap(key[i].old);
-            console.log(i + ' empty');
+            //console.log(i + ' empty');
             continue;
         }
         if (key[i].old == key[i].new) {
-            console.log(i + ' skip');
+            //console.log(i + ' skip');
             continue;
         }
-        console.log(i + ' remap ' + key[i].hint);
+        //console.log(i + ' remap ' + key[i].hint);
         api.map(key[i].new, key[i].old, key[i].domain, key[i].hint);
         api.unmap(key[i].old);
     }
@@ -1525,14 +1525,14 @@ function mapOmnibar() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.unmap(key[i].old);
-            console.log(i + ' empty');
+            //console.log(i + ' empty');
             continue;
         }
         if (key[i].old == key[i].new) {
-            console.log(i + ' skip');
+            //console.log(i + ' skip');
             continue;
         }
-        console.log(i + ' remap ' + key[i].hint);
+        //console.log(i + ' remap ' + key[i].hint);
         api.cmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
         api.unmap(key[i].old);
     }
@@ -1542,14 +1542,14 @@ function mapVisual() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.vunmap(key[i].old);
-            console.log(i + ' empty');
+            //console.log(i + ' empty');
             continue;
         }
         if (key[i].old == key[i].new) {
-            console.log(i + ' skip');
+            //console.log(i + ' skip');
             continue;
         }
-        console.log(i + ' remap ' + key[i].hint);
+        //console.log(i + ' remap ' + key[i].hint);
         api.vmap(key[i].new, key[i].old, key[i].domain, key[i].hint);
         api.vunmap(key[i].old);
     }
@@ -1559,14 +1559,14 @@ function mapInsert() {
     for (let i = 0; i < key.length; i++) {
         if (key[i].new == '') {
             api.iunmap(key[i].old);
-            console.log(i + ' empty');
+            //console.log(i + ' empty');
             continue;
         }
         if (key[i].old == key[i].new) {
-            console.log(i + ' skip');
+            //console.log(i + ' skip');
             continue;
         }
-        console.log(i + ' remap ' + key[i].hint);
+        //console.log(i + ' remap ' + key[i].hint);
         api.imap(key[i].new, key[i].old, key[i].domain, key[i].hint);
         api.iunmap(key[i].old);
     }
@@ -1579,28 +1579,15 @@ mapInsert();
 ////////////////////////////////////////////////////////////////
 // Global mappings
 ////////////////////////////////////////////////////////////////
-let memory = '';
-api.mapkey('<Space>ms', 'Store clipboard', function() {
-    navigator.clipboard.readText()
-        .then(text => {
-            console.log('Clipboard content: ', text);
-            memory = text;
-        })
-        .catch(err => {
-            console.error('Failed to read clipboard content', err);
-        });
-    console.log(memory);
-});
 
-api.mapkey('<Space>mr', 'Recall clipboard', function() {
-    navigator.clipboard.writeText(memory.value());
-});
+
+
 ////////////////////////////////////////////////////////////////
 // Domain specific mappings
 ////////////////////////////////////////////////////////////////
 
 ////////////////////////////////
-// Netsuie
+// Netsuite
 ////////////////////////////////
 api.mapkey('<Space>i', 'Edit form', function() {
     document.getElementById('edit').click();
@@ -1610,19 +1597,24 @@ api.mapkey('<Space>w', 'Save form', function() {
     document.getElementById('btn_multibutton_submitter').click();
 }, /netsuite\.com/);
 
+api.mapkey('<Space>e', 'Compose email', function() {
+    document.getElementById('newmessage').click();
+}, /netsuite\.com/);
+
 api.mapkey('<Space>no', 'New order', function() {
     let id = document.getElementById('id').value;
     window.location.href = "javascript:document.location='/app/accounting/transactions/salesord.nl?entity=" + id + "&whence='"
 }, /netsuite\.com/);
 
-api.mapkey('<Space>rma', 'Fill order with case info', function() {
-    console.log(memory);
+api.mapkey('<Space>rma', 'Fill order with case info', functio() {
+    let memory = document.getElementById('otherrefnum').value;
     document.getElementById('memo').value = memory + ' - 100% RMA - Ready to book';
     let field = document.getElementById('custbody_finance');
     let value = field.value;
     field.value = '100% RMA\r\n\r\n' + value;
     field = document.getElementById('custbody_logistics');
     value = field.value;
+    document.getElementById('custbody_is_rma_flag_fs').click();
     field.value = '100% RMA\r\n\r\n' + value;
-    document.getElementById('custbody_si_support_case_display').value = memory;
+    document.getElementById('custbody_si_support_case_display').value = '%' + memory;
 }, /netsuite\.com/);
