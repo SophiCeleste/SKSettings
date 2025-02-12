@@ -1606,7 +1606,7 @@ api.mapkey('<Space>no', 'New order', function() {
     window.location.href = "javascript:document.location='/app/accounting/transactions/salesord.nl?entity=" + id + "&whence='"
 }, /netsuite\.com/);
 
-api.mapkey('<Space>rma', 'Fill order with case info', functio() {
+api.mapkey('<Space>rma', 'Fill order with case info', function() {
     let memory = document.getElementById('otherrefnum').value;
     document.getElementById('memo').value = memory + ' - 100% RMA - Ready to book';
     let field = document.getElementById('custbody_finance');
