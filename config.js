@@ -1602,8 +1602,7 @@ api.mapkey('<Space>e', 'Compose email', function() {
 }, /netsuite\.com/);
 
 api.mapkey('<Space>no', 'New order', function() {
-    let id = document.getElementById('id').value;
-    window.location.href = "javascript:document.location='/app/accounting/transactions/salesord.nl?entity=" + id + "&whence='"
+    document.getElementById('salesord').click();
 }, /netsuite\.com/);
 
 api.mapkey('<Space>rma', 'Fill order with case info', function() {
