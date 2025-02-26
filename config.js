@@ -1606,7 +1606,7 @@ api.mapkey('<Space>no', 'New order', function() {
 }, /netsuite\.com/);
 
 api.mapkey('<Space>y', 'Make copy', function() {
-    document.getElementById('uif29622').click();
+    document.getElementById('uif19740').click();
 }, /netsuite\.com/);
 
 api.mapkey('<Space>rma', 'Fill order with case info', function() {
