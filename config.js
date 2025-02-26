@@ -1605,6 +1605,10 @@ api.mapkey('<Space>no', 'New order', function() {
     document.getElementById('salesord').click();
 }, /netsuite\.com/);
 
+api.mapkey('<Space>y', 'Make copy', function() {
+    document.getElementById('uif29622').click();
+}, /netsuite\.com/);
+
 api.mapkey('<Space>rma', 'Fill order with case info', function() {
     let memory = document.getElementById('otherrefnum').value;
     document.getElementById('memo').value = memory + ' - 100% RMA - Ready to book';
