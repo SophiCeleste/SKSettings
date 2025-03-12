@@ -1605,9 +1605,13 @@ api.mapkey('<Space>no', 'New order', function() {
     document.getElementById('salesord').click();
 }, /netsuite\.com/);
 
-api.mapkey('<Space>y', 'Make copy', function() {
-    NLInvokeButton(getButton('makecopy'))
+api.mapkey('<Space>nn', 'New note', function() {
+    document.getElementById('newhist').click();
 }, /netsuite\.com/);
+
+//api.mapkey('<Space>y', 'Make copy', function() {
+//    NLInvokeButton(getButton('makecopy'))
+//}, /netsuite\.com/);
 
 api.mapkey('<Space>rma', 'Fill order with case info', function() {
     let memory = document.getElementById('otherrefnum').value;
