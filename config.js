@@ -1589,16 +1589,16 @@ mapInsert();
 ////////////////////////////////
 // Netsuite
 ////////////////////////////////
+api.mapkey('<Space>e', 'Compose email', function() {
+    document.getElementById('newmessage').click();
+}, /netsuite\.com/);
+
 api.mapkey('<Space>i', 'Edit form', function() {
     document.getElementById('edit').click();
 }, /netsuite\.com/);
 
-api.mapkey('<Space>w', 'Save form', function() {
-    document.getElementById('btn_multibutton_submitter').click();
-}, /netsuite\.com/);
-
-api.mapkey('<Space>e', 'Compose email', function() {
-    document.getElementById('newmessage').click();
+api.mapkey('<Space>nf', 'New follow up', function() {
+    document.getElementById('newrecrecmachcustrecord_onboarding_name').click();
 }, /netsuite\.com/);
 
 api.mapkey('<Space>no', 'New order', function() {
@@ -1607,6 +1607,10 @@ api.mapkey('<Space>no', 'New order', function() {
 
 api.mapkey('<Space>nn', 'New note', function() {
     document.getElementById('newhist').click();
+}, /netsuite\.com/);
+
+api.mapkey('<Space>w', 'Save form', function() {
+    document.getElementById('btn_multibutton_submitter').click();
 }, /netsuite\.com/);
 
 //api.mapkey('<Space>y', 'Make copy', function() {
