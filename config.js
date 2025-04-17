@@ -1589,6 +1589,16 @@ mapInsert();
 ////////////////////////////////
 // Netsuite
 ////////////////////////////////
+api.mapkey('<Space>cu', 'Open CU page', function() {
+    var cu = document.getElementById('companyid').value;
+    window.open("https://1116468.app.netsuite.com/app/common/entity/custjob.nl?id=" + cu);
+}, /netsuite\.com/);
+
+api.mapkey('<Shift-Space>CU', 'Open CU page in new tab', function() {
+    var cu = document.getElementById('companyid').value;
+    window.open("https://1116468.app.netsuite.com/app/common/entity/custjob.nl?id=" + cu);
+}, /netsuite\.com/);
+
 api.mapkey('<Space>e', 'Compose email', function() {
     document.getElementById('newmessage').click();
 }, /netsuite\.com/);
